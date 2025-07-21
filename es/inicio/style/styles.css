@@ -1,6 +1,9 @@
+/*Configuración inicial*/
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face{
@@ -42,8 +45,25 @@
     --dark-secondary-background-color: #121212;
     --dark-card-color: #333333;
     --dark-font-color: #FFFCF2;
-    --shadow-screen: 4px 4px 8px rgb(0,0,0,0.5)
+    --shadow-screen: 4px 4px 8px rgb(0,0,0,0.5);
+    --shadow-mobile: 2px 2px 4px rgb(0,0,0,0.5);
 }
+
+h2{
+    font-family: "Sansation-bold";
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+p{
+    font-family: "SourceSans3-light";
+    font-size: 14px;
+    text-align: justify;
+}
+
+/*Sección Hero*/
 
 .hero{
     background-color: var(--primary-background-color);
@@ -53,6 +73,7 @@
     align-items: center;
     height: 100vh;
     width: 100%;
+    text-align: center;
 }
 
 .hero img{
@@ -60,30 +81,40 @@
     max-width: 60%;
     max-height: 60%;
     border-radius: 50%;
-    box-shadow: var(--shadow-screen);
+    box-shadow: var(--shadow-mobile);
 }
 
 .hero h1{
     font-family: "Sansation-bold";
-    font-size: 64px;
+    font-size: 32px;
     letter-spacing: 0.1em;
 }
 
 .hero h3{
     font-family: "Sansation-light";
-    font-size: 32px;
+    font-size: 24px;
 }
 
 .hero h4{
     font-family: "Sansation-light";
-    font-size: 20px;
+    font-size: 18px;
 }
 
+/*Barra de navegación*/
+
 .barra-navegacion{
-    height: 100px;
+    height: 72px;
     background-color: var(--primary-background-color);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 110px 1fr 110px;
+}
+
+.barra-navegacion.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 .barra-navegacion section{
@@ -92,35 +123,48 @@
 }
 
 .barra-navegacion div{
-    height: 80px;
-    width: 80px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     text-align: center;
     transition: 0.5s;
+    background-color: #FFC801;
 }
 
 .barra-navegacion div:hover{
-    box-shadow: var(--shadow-screen);
+    box-shadow: var(--shadow-mobile);
 }
 
 .barra-navegacion img{
-    height: 50px;
+    height: 24px;
     width: auto;
-    padding: 15px;
+    margin: 8px;
 }
 
-.menu-izquierda{
-    justify-content: left;
+.menu-hamburguesa{
+    padding-left: 10px;
+}
+
+.boton-inicio{
+    justify-content: center;
     align-items: center;
 }
 
 .menu-derecha{
     justify-content: right;
     align-items: center;
-    padding-right: 100px;
-    gap: 20px
+    padding-right: 10px;
+    gap: 10px
 }
 
-.logo{
-    margin-left: 100px;
+/*Sección Sobre mi*/
+
+.sobre-mi{
+    padding: 25px 20px;
+    width: 100%
+}
+
+.sobre-mi img{
+    width: 100%;
+    padding: 25px 0px;
 }
