@@ -112,8 +112,7 @@ p{
 .barra-navegacion.fixed {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   z-index: 2;
 }
 
@@ -157,14 +156,171 @@ p{
     gap: 10px
 }
 
-/*Sección Sobre mi*/
+/*Secciones*/
 
-.sobre-mi{
+.seccion{
     padding: 25px 20px;
-    width: 100%
+    width: 100%;
+    justify-items: center;
+    background-color: var(--secondary-background-color);
 }
 
-.sobre-mi img{
+.seccion img{
     width: 100%;
     padding: 25px 0px;
+}
+
+/*Sección proyectos*/
+
+.boton-proyectos{
+    background-color: var(--button-color);
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    margin: 25px 0px;
+    box-shadow: var(--shadow-mobile);
+}
+
+.boton-proyectos h4{
+    font-family: "Sansation-light";
+    font-size: 20px;
+}
+
+.tarjeta {
+    background-color: var(--card-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow-mobile);
+    width: calc(100vw - 20px);
+    margin: 10px;
+    text-align: center;
+    scroll-snap-type: start;
+    scroll-snap-align: center;
+}
+
+.tarjeta img{
+    padding: 10px;
+    padding-bottom: 0px;
+    min-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px; /*Ponemos un border-radius de padding + 5 ya que estamos en border-box*/
+}
+
+.tarjeta h3{
+    font-family: "Sansation-light";
+    font-size: 24px;
+    padding: 10px 0px;
+}
+
+.tarjeta p{
+    font-family: "SourceSans3-light";
+    font-size: 14px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+/*Slider*/
+
+.slider{
+    width: 100vw;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider ul{
+    display: flex;
+    width: max-content;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.botones-slider{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.botones-slider a{
+    background-color: var(--primary-background-color);
+    padding: 5px 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color box-sadow 5s;
+}
+
+.botones-slider a:hover{
+    background-color: var(--button-color);
+    box-shadow: var(--shadow-mobile);
+}
+
+/*Tabla caja de herramientas*/
+
+.herramientas{
+    width: calc(100%);
+    padding: 0;
+    text-align: center;
+}
+
+.herramientas td{
+    padding-top: 25px;
+    vertical-align: center;
+}
+
+.herramientas img{
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    filter: drop-shadow(var(--shadow-mobile));
+}
+
+.herramientas p{
+    font-family: "Sansation-light";
+    font-size: 14px;
+}
+
+/*Tabla formación*/
+
+.curriculum{
+    padding-top: 20px;
+    border-spacing: 10px;
+}
+
+.curriculum p{
+    text-align: left;
+}
+
+.tiempo{
+    vertical-align: top;
+}
+
+.tiempo p{
+    font-family: "SourceSans3-regular";
+    width: 120px;
+    text-align: right;
+}
+
+.centro{
+    font-family: "SourceSans3-extralight";
+}
+
+/*Sección Intereses*/
+
+.intereses img{
+    padding: 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-mobile);
+}
+
+/*Sección Contacta Conmigo*/
+
+.contacto{
+    background-color: var(--primary-background-color);
+    padding: 25px 10px;
+    text-align: center;
 }
