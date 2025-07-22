@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="es/inicio/style/styles.css">
 </head>
 <body>
-    <header class="hero">
+    <header id="inicio" class="hero">
         <img src="images/Caricatura.png" alt="Caricatura Kenneth">
         <h3>¡Hola! Mi nombre es</h3>
         <h1>KENNETH ALONSO</h1>
@@ -16,18 +16,38 @@
     </header>
     <nav class="barra-navegacion">
         <section class="menu-hamburguesa">
-            <div><img src="images/icons/menu.png" alt="icono menú hamburguesa"></div>
+            <div id="noDesplegado"><img src="images/icons/menu.png" alt="icono menú hamburguesa"></div>
+            <div id="desplegado">
+                <img id="cerrar" src="images/icons/x.png" alt="icono X">
+                <p>Menú</p>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>Proyectos</li>
+                    <li>Aviso Legal</li>
+                    <li>Cookies</li>
+                </ul>
+                <p>Secciones</p>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#caja-herramientas">Caja de Herramientas</a></li>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#intereses">Intereses</a></li>
+                    <li><a href="#contacta-conmigo">Contacta Conmigo</a></li>
+                </ul>
+            </div>
         </section>
         <section class="boton-inicio">
-            <img class="logo" src="images/logo KAA.png" alt="Logo KAA">
+            <a href="#inicio"><img class="logo" src="images/logo KAA.png" alt="Logo KAA"></a>
         </section>
         <section class="menu-derecha">
-            <div><img src="images/icons/arabica.png" alt="icono cambio idioma"></div>
-            <div><img src="images/icons/dia-y-noche.png" alt="icono cambio modo claro-oscuro"></div>
+            <div><a href="en/home/index.html#principal"><img src="images/icons/arabica.png" alt="icono cambio idioma"></a></div>
+            <div id="toogleTema" class="boton-toggle"><img src="images/icons/dia-y-noche.png" alt="icono cambio modo claro-oscuro"></div>
         </section>                      
     </nav>
-    <div class="seccion-principal">
-        <section class="sobre-mi seccion">
+    <div id="principal" class="seccion-principal">
+        <section id="sobre-mi" class="seccion">
             <h2>SOBRE MÍ</h2>
             <p>
                 Soy arquitecto de formación y con casi 10 años de experiencia trabajando en el sector industrial. Sin embargo, hace un tiempo decidí dar un giro a mi vida y dedicarme a lo que realmente me apasiona: la programación. Ahora estoy estudiando Desarrollo de Aplicaciones Multiplataforma (DAM) para prepararme a fondo y dar mis primeros pasos en el mundo del software.
@@ -36,9 +56,9 @@
             </p>
         </section>
         <section class="seccion">
-            <img src="images/Galgos negro.png" alt="silueta de dos galgos en negro">
+            <img id="imagenGalgos" class="galgos" src="images/Galgos negro.png" alt="silueta de dos galgos en negro">
         </section>
-        <section class="seccion">
+        <section id="proyectos" class="seccion">
             <h2>PROYECTOS</h2>
             <p>
                 En esta sección encontrarás una selección de mis proyectos más representativos, desarrollados durante mi formación y de manera autodidacta. Cada uno refleja mi evolución como desarrollador, así como mi enfoque en la escritura de código limpio, funcional y bien estructurado.
@@ -108,7 +128,7 @@
                 <a href="#proyecto9" class="scroll-link"></a>
             </div>
         </section>
-        <section class="seccion">
+        <section id="caja-herramientas" class="seccion">
             <h2>CAJA DE HERRAMIENTAS</h2>
             <p>
                 En esta sección presento los lenguajes de programación, lenguajes de marca y bases de datos que utilizo habitualmente en mis proyectos. Son las tecnologías clave con las que desarrollo y diseño aplicaciones, desde la estructura y la lógica hasta el almacenamiento de datos. Conocer y dominar estas herramientas me permite crear soluciones funcionales, escalables y bien organizadas.
@@ -117,26 +137,26 @@
         <section class="seccion">
             <table class="herramientas">
                 <tr>
-                    <td><img src="images/icons/java.png" alt="icono de java"></td>
+                    <td><img class="icono" src="images/icons/java.png" alt="icono de java"></td>
                     <td><p>Java</p></td>
-                    <td><img src="images/icons/html-5.png" alt="icono de html-5"></td>
+                    <td><img class="icono" src="images/icons/html-5.png" alt="icono de html-5"></td>
                     <td><p>HTML5</p></td>
                 </tr>
                 <tr>
-                    <td><img src="images/icons/python.png" alt="icono de python"></td>
+                    <td><img class="icono" src="images/icons/python.png" alt="icono de python"></td>
                     <td><p>Python</p></td>
-                    <td><img src="images/icons/css-3.png" alt="icono de css-3"></td>
+                    <td><img class="icono" src="images/icons/css-3.png" alt="icono de css-3"></td>
                     <td><p>CSS3</p></td>
                 </tr>
                 <tr>
-                    <td><img src="images/icons/mysql.png" alt="icono de mySQL"></td>
+                    <td><img class="icono" src="images/icons/mysql.png" alt="icono de mySQL"></td>
                     <td><p>MySQL</p></td>
-                    <td><img src="images/icons/js.png" alt="icono de javascript"></td>
+                    <td><img class="icono" src="images/icons/js.png" alt="icono de javascript"></td>
                     <td><p>JavaScript</p></td>
                 </tr>
             </table>
         </section>
-        <section class="seccion">
+        <section id="formacion" class="seccion">
             <h2>FORMACIÓN</h2>
             <p>
                 A lo largo de mi trayectoria, he apostado por una formación continua que me ha permitido adquirir conocimientos sólidos y actualizados en diversas áreas. Desde mis estudios iniciales en arquitectura hasta mi actual especialización en Desarrollo de Aplicaciones Multiplataforma, siempre he buscado combinar teoría y práctica para crecer profesionalmente. Esta base formativa me proporciona una visión amplia y me prepara para adaptarme a los cambios y demandas del sector tecnológico.
@@ -201,7 +221,7 @@
                 </tr>
             </table>
         </section>
-        <section class="seccion">
+        <section id="experiencia" class="seccion">
             <h2>EXPERIENCIA</h2>
             <p>
                 A lo largo de mi carrera he trabajado en distintos entornos profesionales que me han permitido desarrollar habilidades clave como la responsabilidad, el trabajo en equipo, la adaptabilidad y la resolución de problemas. Esta trayectoria me ha dado una base sólida para enfrentar nuevos desafíos y crecer en cualquier ámbito en el que me involucre.
@@ -255,7 +275,7 @@
                 </tr>
             </table>
         </section>
-        <section class="seccion">
+        <section id="intereses" class="seccion">
             <h2>INTERESES</h2>
             <p>
                 Cuando no estoy programando (o peleándome con algún bug), me gusta rodearme de cosas que me inspiran, me relajan o simplemente me divierten. Escucho muchos podcasts, en especial de historia, ciencia o curiosidades, ya sea mientras paseo con mis dos galgos o cuando estoy concentrado pintando miniaturas de Warhammer, una afición que mezcla creatividad, estrategia y mucha paciencia con pinceles diminutos.
@@ -267,7 +287,7 @@
             <img src="images/aficiones.jpg" alt="figura pintada">
         </section>
     </div>
-    <section class="contacto">
+    <section id="contacta-conmigo" class="contacto">
         <h2>CONTACTA CONMIGO</h2>
         <h3>Vamos a crear algo juntos</h3>
     </section>

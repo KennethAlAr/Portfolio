@@ -1,3 +1,4 @@
+/*Menú anclado al llegar arriba*/
 const barraNavegacion = document.querySelector('.barra-navegacion');
 const seccionPrincipal = document.querySelector('.seccion-principal');
 let barraNavegacionOffsetTop = barraNavegacion.offsetTop;
@@ -15,3 +16,49 @@ window.addEventListener('scroll', () => {
     seccionPrincipal.style.paddingTop = '';
   }
 });
+
+/*Modo Oscuro*/
+const boton = document.getElementById("toogleTema");
+const imgGalgos = document.getElementById("imagenGalgos");
+const galgos = document.querySelector('.galgos');
+const tarjetas = document.querySelectorAll('.tarjeta');
+const botonProyectos = document.querySelector('.boton-proyectos');
+const intereses = document.querySelector('.intereses');
+const botonToggle = document.querySelector('.boton-toggle')
+
+boton.addEventListener("click", oscuro);
+
+function oscuro(){
+  seccionPrincipal.classList.toggle("oscuro");
+  galgos.classList.toggle("oscuro");
+  botonProyectos.classList.toggle("oscuro");
+  intereses.classList.toggle("oscuro");
+  botonToggle.classList.toggle("oscuro");
+  tarjetas.forEach(tarjeta => {
+    tarjeta.classList.toggle("oscuro");
+  });
+  if (imgGalgos.src.includes("negro")) {
+    imgGalgos.src = "images/Galgos blanco.png";
+  } else {
+    imgGalgos.src = "images/Galgos negro.png";
+  }
+}
+
+/*Menú desplegable*/
+const burger = document.getElementById("noDesplegado");
+const menu = document.getElementById("desplegado");
+const cerrar = document.getElementById("cerrar");
+
+burger.addEventListener("click", abrirMenu);
+
+function abrirMenu(){
+  burger.style.display = "none";
+  menu.style.display = "block";
+}
+
+cerrar.addEventListener("click", cerrarMenu);
+
+function cerrarMenu(){
+  burger.style.display = "block";
+  menu.style.display = "none";
+}

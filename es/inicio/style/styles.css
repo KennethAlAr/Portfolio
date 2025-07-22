@@ -47,6 +47,8 @@
     --dark-font-color: #FFFCF2;
     --shadow-screen: 4px 4px 8px rgb(0,0,0,0.5);
     --shadow-mobile: 2px 2px 4px rgb(0,0,0,0.5);
+    --dark-shadow-screen: 4px 4px 8px rgb(114,113,111,1);
+    --dark-shadow-mobile: 2px 2px 4px rgb(114,113,111,1);
 }
 
 h2{
@@ -143,6 +145,7 @@ p{
 
 .menu-hamburguesa{
     padding-left: 10px;
+    position: relative;
 }
 
 .boton-inicio{
@@ -156,6 +159,57 @@ p{
     align-items: center;
     padding-right: 10px;
     gap: 10px
+}
+
+.boton-toggle{
+    transition: background-color 1s ease;
+}
+
+/*Menú hamburguesa*/
+#noDesplegado{
+    display: block;
+}
+
+#desplegado{
+    background-color: var(--button-color);
+    position: absolute;
+    top: 16px;
+    width: 210px;
+    height:auto;
+    border-radius: 20px;
+    text-align: left;
+    padding-bottom: 20px;
+    box-shadow: var(--dark-shadow-mobile);
+    display: none;
+    z-index: 3;
+}
+
+#desplegado:hover{
+    cursor: default;
+}
+
+#desplegado p{
+    padding: 5px 10px;
+    font-family: "Sansation-regular";
+}
+
+#desplegado li{
+    padding: 0 20px;
+    font-family: "Sansation-light";
+    font-size: 14px;
+}
+
+#desplegado a{
+    text-decoration: none;
+    color: var(--font-color)
+}
+
+#desplegado a:hover{
+    cursor: pointer;
+}
+
+#cerrar:hover{
+    cursor: pointer;
 }
 
 /*Secciones*/
@@ -175,6 +229,14 @@ p{
 .seccion img{
     width: 100%;
     padding: 25px 0px;
+}
+
+.galgos{    
+    filter: drop-shadow(var(--shadow-mobile));
+}
+
+#sobre-mi, #proyectos, #caja-herramientas, #formacion, #experiencia, #intereses, #contacta-conmigo{
+    padding-top: 100px;
 }
 
 /*Sección proyectos*/
@@ -262,7 +324,7 @@ p{
 
 .botones-slider a:hover{
     background-color: var(--button-color);
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--dark-shadow-mobile);
 }
 
 /*Tabla caja de herramientas*/
@@ -282,7 +344,7 @@ p{
     padding: 0;
     width: 40px;
     height: 40px;
-    filter: drop-shadow(var(--shadow-mobile));
+    filter: drop-shadow(var(--dark-shadow-mobile));
 }
 
 .herramientas p{
@@ -438,8 +500,12 @@ footer{
     transition: 1s;
 }
 
-.footer-izquierda div:hover, .footer-derecha div:hover{
+.footer-izquierda div:hover{
     box-shadow: var(--shadow-mobile);
+    cursor: pointer;
+}
+
+.footer-derecha div:hover{
     cursor: pointer;
 }
 
@@ -449,4 +515,34 @@ footer{
 
 .footer-derecha p{
     text-align: right;
+}
+
+/*Tema oscuro*/
+
+.seccion-principal.oscuro{
+    background-color: var(--dark-secondary-background-color);
+    color: var(--dark-font-color);
+}
+
+.galgos.oscuro{    
+    filter: drop-shadow(var(--dark-shadow-mobile));
+}
+
+.tarjeta.oscuro{
+    background-color: var(--dark-card-color);
+    box-shadow: var(--dark-shadow-mobile);
+}
+
+.boton-proyectos.oscuro{
+    box-shadow: var(--dark-shadow-mobile);
+    color: var(--font-color);
+}
+
+.intereses.oscuro img{    
+    box-shadow: var(--dark-shadow-mobile);
+}
+
+.boton-toggle.oscuro{
+    background-color: var(--button-color);
+    box-shadow: var(--shadow-mobile);
 }
