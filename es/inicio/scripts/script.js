@@ -1,5 +1,5 @@
 const barraNavegacion = document.querySelector('.barra-navegacion');
-const sobreMi = document.querySelector('.sobre-mi');
+const seccionPrincipal = document.querySelector('.seccion-principal');
 let barraNavegacionOffsetTop = barraNavegacion.offsetTop;
 
 window.addEventListener('scroll', () => {
@@ -9,9 +9,9 @@ window.addEventListener('scroll', () => {
 
   if (window.scrollY >= barraNavegacionOffsetTop) {
     barraNavegacion.classList.add('fixed');
-    sobreMi.style.paddingTop = '97px';
+    seccionPrincipal.style.paddingTop = '72px';
   } else {
     barraNavegacion.classList.remove('fixed');
-    sobreMi.style.paddingTop = '';
+    seccionPrincipal.style.paddingTop = '';
   }
 });
