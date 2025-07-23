@@ -404,10 +404,25 @@ p{
     text-align: center;
 }
 
+input{
+    font-family: "Sansation-light";
+    font-size: 14px;
+    padding: 10px;
+}
+
+textarea{
+    font-family: "Sansation-light";    
+    font-size: 14px;
+    padding: 10px;
+    text-align: justify;
+}
+
 .input{
     background-color: var(--primary-background-color);
     padding: 25px 20px;
     text-align: left;
+    vertical-align: top;
+    resize: none;
 }
 
 .datos{
