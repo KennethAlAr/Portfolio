@@ -270,6 +270,32 @@ footer{
     text-align: right;
 }
 
+/*Flecha arriba*/
+
+.arriba{
+    background-color: var(--primary-background-color);
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-mobile);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.arriba img{
+    height: 25px;
+    width: auto;
+}
+
+.arriba.ajustado{
+    bottom: 90px;
+}
+
 /*Botón de cookies*/
 
 .cookie-popup{

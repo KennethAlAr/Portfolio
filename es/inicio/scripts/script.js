@@ -24,7 +24,8 @@ const galgos = document.querySelector('.galgos');
 const tarjetas = document.querySelectorAll('.tarjeta');
 const botonProyectos = document.querySelector('.boton-proyectos');
 const intereses = document.querySelector('.intereses');
-const botonToggle = document.querySelector('.boton-toggle')
+const botonToggle = document.querySelector('.boton-toggle');
+const botonSubir = document.getElementById('botonArriba');
 
 boton.addEventListener("click", oscuro);
 
@@ -33,7 +34,8 @@ function oscuro(){
   galgos.classList.toggle("oscuro");
   botonProyectos.classList.toggle("oscuro");
   intereses.classList.toggle("oscuro");
-  botonToggle.classList.toggle("oscuro");
+  botonToggle.classList.toggle("oscuro");  
+  botonSubir.classList.toggle("oscuro");
   tarjetas.forEach(tarjeta => {
     tarjeta.classList.toggle("oscuro");
   });
@@ -92,3 +94,30 @@ botonPopup.addEventListener("click", function(){
     localStorage.cookiesAccepted = "true";
     popup.classList.remove("show");
 })
+
+/*Botón para subir arriba*/
+
+const seccion = document.getElementById('sobre-mi');
+
+window.addEventListener('scroll', () => {
+  const seccionTop = seccion.getBoundingClientRect().bottom;
+  const ventanaAltura = window.innerHeight;
+
+  if(seccionTop < ventanaAltura - 100){
+    botonSubir.classList.add("visible");
+  } else {
+    botonSubir.classList.remove("visible");
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const scrollTotal = document.documentElement.scrollHeight;
+  const scrollActual = window.innerHeight + window.scrollY;
+
+  if (scrollTotal - scrollActual < 80) {
+    const diferencia = 80 - (scrollTotal - scrollActual);
+    botonSubir.style.bottom = `${10 + diferencia}px`;
+  } else {
+    botonSubir.style.bottom = '10px';
+  }
+});
