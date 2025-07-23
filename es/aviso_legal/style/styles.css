@@ -58,6 +58,11 @@ p{
     text-align: justify;
 }
 
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
 /*Barra de navegación*/
 
 .barra-navegacion{
@@ -242,6 +247,44 @@ footer{
 #boton{
     background-color: var(--button-color);
     box-shadow: var(--shadow-mobile);
+}
+
+/*Botón de cookies*/
+
+.cookie-popup{
+    position: fixed;
+    bottom: 20px;
+    padding: 10px;
+    background-color: var(--button-color);
+    margin: 0 10px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+}
+
+.cookie-popup.show{
+    display: flex;
+}
+
+.cookie-popup button{
+    background-color: var(--primary-background-color);
+    padding: 3px 10px;
+    box-shadow: var(--shadow-mobile);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.cookie-popup p{
+    font-family: "Sansation-light";
+    padding: 5px;
+}
+
+.cookie-popup a{
+    font-family: "Sansation-regular";
+    text-decoration: underline;
 }
 
 /*Tema oscuro*/

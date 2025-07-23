@@ -42,7 +42,23 @@ function oscuro(){
   } else {
     imgGalgos.src = "images/Galgos negro.png";
   }
+  if (seccionPrincipal.classList.contains("oscuro")) {
+    localStorage.setItem("modo", "oscuro");
+  } else {
+    localStorage.setItem("modo", "claro");
+  }
 }
+
+/*Comprobar modo oscuro*/
+
+function comprobarModoOscuro() {
+  const modo = localStorage.getItem("modo");
+  if (modo === "oscuro") {
+    oscuro();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", comprobarModoOscuro);
 
 /*Menú desplegable*/
 const burger = document.getElementById("noDesplegado");
@@ -62,3 +78,17 @@ function cerrarMenu(){
   burger.style.display = "block";
   menu.style.display = "none";
 }
+
+/*Popup de cookies*/
+
+const popup = document.getElementById("cookiePopup");
+const botonPopup = document.getElementById("aceptarCookies");
+
+if (!localStorage.cookiesAccepted) {
+    popup.classList.add("show");
+}
+
+botonPopup.addEventListener("click", function(){
+    localStorage.cookiesAccepted = "true";
+    popup.classList.remove("show");
+})

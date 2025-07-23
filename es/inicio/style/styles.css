@@ -65,6 +65,11 @@ p{
     text-align: justify;
 }
 
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
 /*Sección Hero*/
 
 .hero{
@@ -224,6 +229,7 @@ p{
     padding-bottom: 0;
     width: 100%;
     justify-items: center;
+    scroll-margin-top: 100px;
 }
 
 .seccion img{
@@ -233,10 +239,6 @@ p{
 
 .galgos{    
     filter: drop-shadow(var(--shadow-mobile));
-}
-
-#sobre-mi, #proyectos, #caja-herramientas, #formacion, #experiencia, #intereses, #contacta-conmigo{
-    padding-top: 100px;
 }
 
 /*Sección proyectos*/
@@ -266,6 +268,7 @@ p{
     text-align: center;
     scroll-snap-type: start;
     scroll-snap-align: center;
+    scroll-margin-top: 100px; /*Revisar, no funciona*/
 }
 
 .tarjeta img{
@@ -392,6 +395,7 @@ p{
     padding: 25px 10px;
     padding-bottom: 0px;
     text-align: center;
+    scroll-margin-top: 100px;
 }
 
 .contacto h2{
@@ -530,6 +534,44 @@ footer{
 
 .footer-derecha p{
     text-align: right;
+}
+
+/*Botón de cookies*/
+
+.cookie-popup{
+    position: fixed;
+    bottom: 20px;
+    padding: 10px;
+    background-color: var(--button-color);
+    margin: 0 10px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4;
+}
+
+.cookie-popup.show{
+    display: flex;
+}
+
+.cookie-popup button{
+    background-color: var(--primary-background-color);
+    padding: 3px 10px;
+    box-shadow: var(--shadow-mobile);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.cookie-popup p{
+    font-family: "Sansation-light";
+    padding: 5px;
+}
+
+.cookie-popup a{
+    font-family: "Sansation-regular";
+    text-decoration: underline;
 }
 
 /*Tema oscuro*/
