@@ -18,8 +18,9 @@ window.addEventListener('scroll', () => {
 });
 
 /*Modo Oscuro*/
-const boton = document.getElementById("toogleTema");
-const imgGalgos = document.getElementById("imagenGalgos");
+const zonaPrincipal = document.getElementById('zonaPrincipal')
+const boton = document.getElementById('toogleTema');
+const imgGalgos = document.getElementById('imagenGalgos');
 const galgos = document.querySelector('.galgos');
 const tarjetas = document.querySelectorAll('.tarjeta');
 const botonProyectos = document.querySelector('.boton-proyectos');
@@ -30,14 +31,15 @@ const botonSubir = document.getElementById('botonArriba');
 boton.addEventListener("click", oscuro);
 
 function oscuro(){
-  seccionPrincipal.classList.toggle("oscuro");
-  galgos.classList.toggle("oscuro");
-  botonProyectos.classList.toggle("oscuro");
-  intereses.classList.toggle("oscuro");
-  botonToggle.classList.toggle("oscuro");  
-  botonSubir.classList.toggle("oscuro");
+  zonaPrincipal.classList.toggle('oscuro');
+  seccionPrincipal.classList.toggle('oscuro');
+  galgos.classList.toggle('oscuro');
+  botonProyectos.classList.toggle('oscuro');
+  intereses.classList.toggle('oscuro');
+  botonToggle.classList.toggle('oscuro');  
+  botonSubir.classList.toggle('oscuro');
   tarjetas.forEach(tarjeta => {
-    tarjeta.classList.toggle("oscuro");
+    tarjeta.classList.toggle('oscuro');
   });
   if (imgGalgos.src.includes("negro")) {
     imgGalgos.src = "images/Galgos blanco.png";
@@ -83,7 +85,7 @@ function cerrarMenu(){
 
 /*Popup de cookies*/
 
-const popup = document.getElementById("cookiePopup");
+const popup = document.getElementById("cookies");
 const botonPopup = document.getElementById("aceptarCookies");
 
 if (!localStorage.cookiesAccepted) {
@@ -114,8 +116,8 @@ window.addEventListener('scroll', () => {
   const scrollTotal = document.documentElement.scrollHeight;
   const scrollActual = window.innerHeight + window.scrollY;
 
-  if (scrollTotal - scrollActual < 80) {
-    const diferencia = 80 - (scrollTotal - scrollActual);
+  if (scrollTotal - scrollActual < 100) {
+    const diferencia = 100 - (scrollTotal - scrollActual);
     botonSubir.style.bottom = `${10 + diferencia}px`;
   } else {
     botonSubir.style.bottom = '10px';

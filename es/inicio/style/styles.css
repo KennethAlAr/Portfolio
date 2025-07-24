@@ -45,10 +45,8 @@
     --dark-secondary-background-color: #121212;
     --dark-card-color: #333333;
     --dark-font-color: #FFFCF2;
-    --shadow-screen: 4px 4px 8px rgb(0,0,0,0.5);
-    --shadow-mobile: 2px 2px 4px rgb(0,0,0,0.5);
-    --dark-shadow-screen: 4px 4px 8px rgb(114,113,111,1);
-    --dark-shadow-mobile: 2px 2px 4px rgb(114,113,111,1);
+    --shadow: 2px 2px 4px rgb(0,0,0,0.5);
+    --dark-shadow: 2px 2px 4px rgb(114,113,111,1);
 }
 
 h2{
@@ -88,7 +86,7 @@ a{
     max-width: 60%;
     max-height: 60%;
     border-radius: 50%;
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
 }
 
 .hero h1{
@@ -138,7 +136,7 @@ a{
 }
 
 .barra-navegacion div:hover{
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
     cursor: pointer;
 }
 
@@ -184,7 +182,7 @@ a{
     border-radius: 20px;
     text-align: left;
     padding-bottom: 20px;
-    box-shadow: var(--dark-shadow-mobile);
+    box-shadow: var(--dark-shadow);
     display: none;
     z-index: 3;
 }
@@ -217,6 +215,41 @@ a{
     cursor: pointer;
 }
 
+/*Zona principal*/
+
+#zonaPrincipal{
+    display: block;
+    width: 100%;
+}
+
+/*Menú aside*/
+
+aside{
+    width: 200px;
+    height: 400px;
+    text-align: right;
+    flex-shrink: 0;
+    display: none;
+    z-index: 4;
+}
+
+aside p{
+    font-family: "Sansation-bold";
+    font-size: 18px;
+    padding: 10px 0;
+    text-align: right;
+    text-decoration: underline;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside li{
+    font-family: "Sansation-regular";
+    font-size: 18px;
+}
+
 /*Secciones*/
 
 .seccion-principal{
@@ -238,7 +271,7 @@ a{
 }
 
 .galgos{    
-    filter: drop-shadow(var(--shadow-mobile));
+    filter: drop-shadow(var(--shadow));
 }
 
 /*Sección proyectos*/
@@ -251,7 +284,7 @@ a{
     align-content: center;
     border-radius: 5px;
     margin-top: 25px;
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
 }
 
 .boton-proyectos h4{
@@ -259,12 +292,29 @@ a{
     font-size: 20px;
 }
 
+/*Slider*/
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider ul{
+    display: flex;
+    width: max-content;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .tarjeta {
     background-color: var(--card-color);
     border-radius: 10px;
-    box-shadow: var(--shadow-mobile);
-    width: calc(100vw - 20px);
-    margin: 10px;
+    box-shadow: var(--shadow);
+    width: calc(100vw - 50px);
+    margin: 20px;
     text-align: center;
     scroll-snap-type: start;
     scroll-snap-align: center;
@@ -273,7 +323,6 @@ a{
 
 .tarjeta img{
     padding: 10px;
-    padding-bottom: 0px;
     min-width: 100%;
     object-fit: cover;
     aspect-ratio: 16 / 9;
@@ -293,23 +342,6 @@ a{
     padding-top: 0px;
 }
 
-/*Slider*/
-
-.slider{
-    width: 100vw;
-    overflow: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-}
-
-.slider ul{
-    display: flex;
-    width: max-content;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .botones-slider{
     display: flex;
     justify-content: center;
@@ -327,13 +359,13 @@ a{
 
 .botones-slider a:hover{
     background-color: var(--button-color);
-    box-shadow: var(--dark-shadow-mobile);
+    box-shadow: var(--dark-shadow);
 }
 
 /*Tabla caja de herramientas*/
 
 .herramientas{
-    width: calc(100%);
+    width: 100%;
     padding: 0;
     text-align: center;
     border-spacing: 25px 25px;;
@@ -347,7 +379,7 @@ a{
     padding: 0;
     width: 40px;
     height: 40px;
-    filter: drop-shadow(var(--dark-shadow-mobile));
+    filter: drop-shadow(var(--dark-shadow));
 }
 
 .herramientas p{
@@ -385,7 +417,7 @@ a{
     padding: 0;
     margin-top: 20px;
     border-radius: 10px;
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
 }
 
 /*Sección Contacta Conmigo*/
@@ -434,7 +466,7 @@ textarea{
     height: 30px;
     border-radius: 5px;
     border: 0;
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
     margin-bottom: 10px;
 }
 
@@ -443,7 +475,7 @@ textarea{
     height: 180px;
     border-radius: 5px;
     border: 0;
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
 }
 
 .enviar{
@@ -454,7 +486,9 @@ textarea{
     border-radius: 5px;
     background-color: var(--button-color);
     border: 0;
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
+    font-family: "Sansation-regular";
+    font-size: 14px;
 }
 
 .enviar:hover{
@@ -520,7 +554,7 @@ footer{
 }
 
 .footer-izquierda div:hover{
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
     cursor: pointer;
 }
 
@@ -538,30 +572,38 @@ footer{
 
 /*Botón de cookies*/
 
-.cookie-popup{
+.cookies{
+    width: 100%;
+    justify-content: center;
+    display: none;
     position: fixed;
     bottom: 20px;
-    padding: 10px;
-    background-color: var(--button-color);
+}
+
+.cookie-popup{
     margin: 0 10px;
+    max-width: 1000px;
+    background-color: var(--button-color);
     border-radius: 10px;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 4;
 }
 
-.cookie-popup.show{
+.cookies.show{
     display: flex;
 }
 
 .cookie-popup button{
     background-color: var(--primary-background-color);
     padding: 3px 10px;
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-family: "Sansation-regular";
+    font-size: 14px;
 }
 
 .cookie-popup p{
@@ -581,10 +623,9 @@ footer{
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 10px;
     right: 10px;
     border-radius: 50%;
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -605,40 +646,275 @@ footer{
     cursor: pointer;
 }
 
-.arriba.ajustado{
-    bottom: 90px;
-}
-
 /*Tema oscuro*/
+
+.menu-lateral.oscuro{
+    color: var(--dark-font-color);
+}
 
 .seccion-principal.oscuro{
     background-color: var(--dark-secondary-background-color);
+}
+
+.seccion-principal.oscuro{
     color: var(--dark-font-color);
 }
 
 .galgos.oscuro{    
-    filter: drop-shadow(var(--dark-shadow-mobile));
+    filter: drop-shadow(var(--dark-shadow));
 }
 
 .tarjeta.oscuro{
     background-color: var(--dark-card-color);
-    box-shadow: var(--dark-shadow-mobile);
+    box-shadow: var(--dark-shadow);
 }
 
 .boton-proyectos.oscuro{
-    box-shadow: var(--dark-shadow-mobile);
+    box-shadow: var(--dark-shadow);
     color: var(--font-color);
 }
 
 .intereses.oscuro img{    
-    box-shadow: var(--dark-shadow-mobile);
+    box-shadow: var(--dark-shadow);
 }
 
 .boton-toggle.oscuro{
     background-color: var(--button-color);
-    box-shadow: var(--shadow-mobile);
+    box-shadow: var(--shadow);
 }
 
 .arriba.oscuro{
-    box-shadow: var(--dark-shadow-mobile);
+    box-shadow: var(--dark-shadow);
+}
+
+/*Media querys*/
+
+@media (min-width: 600px){
+
+    :root{
+        --shadow: 4px 4px 8px rgb(0,0,0,0.5);
+        --dark-shadow: 4px 4px 8px rgb(114,113,111,1);
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    /*Sección hero*/
+
+    .hero img{
+        max-width: 50%;
+        max-height: 50%;
+    }
+
+    .hero h1{
+        font-size: 64px;
+    }
+
+    .hero h3{
+        font-family: "Sansation-light";
+        font-size: 32px;
+    }
+
+    .hero h4{
+        font-family: "Sansation-light";
+        font-size: 20px;
+    }
+
+    /*Barra de navegación*/
+
+    .barra-navegacion{
+        height: 100px;
+    }
+
+    .barra-navegacion div{
+        height: 80px;
+        width: 80px;
+    }
+
+    .barra-navegacion img{
+        height: 50px;
+        margin: 15px;
+    }
+
+    /*Secciones*/
+
+    .seccion-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion{
+        padding: 25px 50px;
+        scroll-margin-top: 150px;
+        max-width: 500px;
+    }
+
+    .boton-proyectos{
+        height: 70px;
+        width: 400px;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    .boton-proyectos h4{
+        font-family: "Sansation-light";
+        font-size: 32px;
+    }
+
+    .tarjeta {
+        border-radius: 20px;
+        width: 440px;
+        margin: 20px 50px;
+    }
+
+    .tarjeta img{
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .tarjeta h3{
+        font-size: 32px;
+        padding: 20px 0px;
+    }
+
+    .tarjeta p{
+        font-size: 20px;
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    .botones-slider{
+        gap: 15px;
+    }
+
+    .botones-slider a{
+        padding: 8px 8px;
+        border-radius: 50%;
+    }
+
+    .herramientas img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .herramientas p{
+        font-size: 20px;
+    }
+
+    .curriculum{
+        border-spacing: 50px;
+    }
+
+    .intereses img{
+        border-radius: 20px;
+    }
+
+    .contacto{
+        padding: 50px 50px;
+        padding-bottom: 0px;
+        scroll-margin-top: 150px;
+    }
+
+    .contacto h2{
+        font-size: 50px;
+    }
+
+    .contacto h3{
+        font-size: 32px;
+    }
+
+    input{
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    textarea{ 
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .input{
+        padding: 25px 50px;
+    }
+
+    .datos{
+        height: 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .mensaje{
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .enviar{
+        margin: 20px 0;
+        height: 40px;
+        width: 130px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    .informacion{
+        padding: 0 50px;
+        padding-bottom: 50px;
+    }
+
+    .informacion img{
+        margin-right: 50px;
+    }
+
+    .informacion div img{
+        height: 50px;
+        margin-right: 50px;
+    }
+
+    .informacion h3{
+        font-size: 32px;
+    }
+
+    /*Footer*/
+
+    footer{
+        height: 100px;
+    }
+
+    .footer-izquierda div, .footer-derecha div{
+        border-radius: 10px;
+    }
+
+    /*Cookies*/
+    
+    .cookie-popup{
+        margin: 0 50px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .cookie-popup button{
+        background-color: var(--primary-background-color);
+        padding: 5px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    /*Botón arriba*/
+
+    .arriba{
+        width: 60px;
+        height: 60px;
+        right: 20px;
+    }
+
+    .arriba img{
+        height: 40px;
+    }
+
 }
