@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
 });
 
 /*Modo Oscuro*/
-const zonaPrincipal = document.getElementById('zonaPrincipal')
+const zonaPrincipal = document.getElementById('zonaPrincipal');
 const boton = document.getElementById('toogleTema');
 const imgGalgos = document.getElementById('imagenGalgos');
 const galgos = document.querySelector('.galgos');
@@ -27,6 +27,7 @@ const botonProyectos = document.querySelector('.boton-proyectos');
 const intereses = document.querySelector('.intereses');
 const botonToggle = document.querySelector('.boton-toggle');
 const botonSubir = document.getElementById('botonArriba');
+const menuLateral = document.querySelector('.menu-lateral');
 
 boton.addEventListener("click", oscuro);
 
@@ -37,7 +38,8 @@ function oscuro(){
   botonProyectos.classList.toggle('oscuro');
   intereses.classList.toggle('oscuro');
   botonToggle.classList.toggle('oscuro');  
-  botonSubir.classList.toggle('oscuro');
+  botonSubir.classList.toggle('oscuro'); 
+  menuLateral.classList.toggle('oscuro');
   tarjetas.forEach(tarjeta => {
     tarjeta.classList.toggle('oscuro');
   });
