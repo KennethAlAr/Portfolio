@@ -44,9 +44,9 @@ function oscuro(){
     tarjeta.classList.toggle('oscuro');
   });
   if (imgGalgos.src.includes("negro")) {
-    imgGalgos.src = "images/Galgos blanco.png";
+    imgGalgos.src = "images/Galgos_blanco.webp";
   } else {
-    imgGalgos.src = "images/Galgos negro.png";
+    imgGalgos.src = "images/Galgos_negro.webp";
   }
   if (seccionPrincipal.classList.contains("oscuro")) {
     localStorage.setItem("modo", "oscuro");

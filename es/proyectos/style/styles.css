@@ -103,6 +103,20 @@ a{
     cursor: pointer;
 }
 
+.barra-navegacion a{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s;
+    background-color: var(--primary-background-color);
+}
+
+.barra-navegacion a:hover{
+    box-shadow: var(--shadow-mobile);
+    cursor: pointer;
+}
+
 .barra-navegacion img{
     height: 24px;
     width: auto;
@@ -167,11 +181,13 @@ a{
 
 #desplegado a{
     text-decoration: none;
-    color: var(--font-color)
+    color: var(--font-color);
+    background-color: var(--button-color);
 }
 
 #desplegado a:hover{
     cursor: pointer;
+    box-shadow: none;
 }
 
 #cerrar:hover{
@@ -438,6 +454,11 @@ footer{
     }
 
     .barra-navegacion button{
+        height: 80px;
+        width: 80px;
+    }
+
+    .barra-navegacion a{
         height: 80px;
         width: 80px;
     }
