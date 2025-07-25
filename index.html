@@ -16,8 +16,8 @@
     </header>
     <nav class="barra-navegacion">
         <section class="menu-hamburguesa">
-            <div id="noDesplegado"><img src="images/icons/menu.png" alt="icono menú hamburguesa"></div>
-            <div id="desplegado">
+            <button id="noDesplegado"><img src="images/icons/menu.png" alt="icono menú hamburguesa"></button>
+            <section id="desplegado">
                 <img id="cerrar" src="images/icons/x.png" alt="icono X">
                 <p>Menú</p>
                 <ul>
@@ -36,14 +36,14 @@
                     <li><a href="#intereses">Intereses</a></li>
                     <li><a href="#contacta-conmigo">Contacta Conmigo</a></li>
                 </ul>
-            </div>
+            </section>
         </section>
         <section class="boton-inicio">
             <a href="#inicio"><img class="logo" src="images/logo KAA.png" alt="Logo KAA"></a>
         </section>
         <section class="menu-derecha">
-            <div><a href="en/home/index.html#principal"><img src="images/icons/arabica.png" alt="icono cambio idioma"></a></div>
-            <div id="toogleTema" class="boton-toggle"><img src="images/icons/dia-y-noche.png" alt="icono cambio modo claro-oscuro"></div>
+            <button><a href="en/home/index.html#principal"><img src="images/icons/arabica.png" alt="icono cambio idioma"></a></button>
+            <button id="toogleTema" class="boton-toggle"><img src="images/icons/dia-y-noche.png" alt="icono cambio modo claro-oscuro"></button>
         </section>                      
     </nav>
     <section id="zonaPrincipal" class="zona-principal">
@@ -68,7 +68,7 @@
                 </ul>
             </nav>
         </aside>
-        <div id="principal" class="seccion-principal">
+        <section id="principal" class="seccion-principal">
             <section id="sobre-mi" class="seccion">
                 <h2>SOBRE MÍ</h2>
                 <p>
@@ -86,10 +86,10 @@
                     En esta sección encontrarás una selección de mis proyectos más representativos, desarrollados durante mi formación y de manera autodidacta. Cada uno refleja mi evolución como desarrollador, así como mi enfoque en la escritura de código limpio, funcional y bien estructurado.
                     He trabajado tanto en frontend como en backend, y cada proyecto está acompañado de una breve descripción, tecnologías utilizadas y, cuando es posible, un enlace para ver el resultado en acción.
                 </p>
-                <div class="boton-proyectos"><a href="es/proyectos/index.html"><h4>Ver todos los Proyectos</h4></a></div>        
+                <a class="boton-proyectos" href="es/proyectos/index.html"><h4>Ver todos los Proyectos</h4></a>        
             </section>
             <section class="seccion">
-                <div class="slider">
+                <section class="slider">
                     <ul>
                         <li id="proyecto1" class="tarjeta">
                             <a href="https://github.com/KennethAlAr/E_continua_MPO" target="_blank"><img src="images/app.jpg" alt="imagen de app1"></a>
@@ -137,8 +137,8 @@
                             <p>Aplicación para adopción de animales con perfiles, filtros y formulario de contacto desarrollado en Python.</p>
                         </li>
                     </ul>
-                </div>
-                <div class="botones-slider">
+                </section>
+                <section class="botones-slider">
                     <a href="#proyecto1" class="scroll-link"></a>
                     <a href="#proyecto2" class="scroll-link"></a>
                     <a href="#proyecto3" class="scroll-link"></a>
@@ -148,7 +148,7 @@
                     <a href="#proyecto7" class="scroll-link"></a>
                     <a href="#proyecto8" class="scroll-link"></a>
                     <a href="#proyecto9" class="scroll-link"></a>
-                </div>
+                </section>
             </section>
             <section id="caja-herramientas" class="seccion">
                 <h2>CAJA DE HERRAMIENTAS</h2>
@@ -308,7 +308,7 @@
             <section class="intereses seccion">
                 <img src="images/aficiones.jpg" alt="figura pintada">
             </section>
-        </div>
+        </section>
     </section>
     <section id="contacta-conmigo" class="contacto">
         <h2>CONTACTA CONMIGO</h2>
@@ -325,10 +325,10 @@
             <button class="enviar">Enviar</button>
         </section>
         <section class="informacion">
-            <div>
+            <section>
                 <img src="images/logo KAA.png" alt="logo KAA">
                 <h3>Kenneth Alonso Arce</h3>
-            </div>
+            </section>
             <p>kennethalonso@email.com</p>
             <p>+34 600 00 00 01</p>
             <a href="https://github.com/KennethAlAr" target="_blank"><img src="images/icons/github.png" alt="icono github"></a>
@@ -336,22 +336,22 @@
         </section>
     </section>
     <footer>
-        <div class="footer-izquierda">
-            <div><a href="es/aviso_legal/index.html"><p>Aviso Legal</p></a></div>
-            <div><a href="es/cookies/index.html"><p>Cookies</p></a></div>
-        </div>
-        <div class="footer-derecha">
-            <div><a href="https://github.com/KennethAlAr" target="_blank"><p>Github</p></a></div>
-            <div><a href="https://www.linkedin.com/in/kennethalar" target="_blank"><p>LinkedIn</p></a></div>
-        </div>
+        <section class="footer-izquierda">
+            <a href="es/aviso_legal/index.html">Aviso Legal</a>
+            <a href="es/cookies/index.html">Cookies</a>
+        </section>
+        <section class="footer-derecha">
+            <a href="https://github.com/KennethAlAr" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/kennethalar" target="_blank">LinkedIn</a>
+        </section>
     </footer>
     <a id="botonArriba" class="arriba" href="#sobre-mi"><img src="images/icons/flechas-arriba.png" alt="icono flecha arriba"></a>
-    <div id="cookies" class="cookies">
-        <div class="cookie-popup" id="cookiePopup">
+    <section id="cookies" class="cookies">
+        <section class="cookie-popup" id="cookiePopup">
             <p>Esta web utiliza únicamente cookies necesarias para su funcionamiento básico y no almacena datos personales ni de seguimiento. <a href="es/cookies/index.html">Saber más</a></p>
             <button id="aceptarCookies">Aceptar</button>
-        </div>
-    </div>
+        </section>
+    </section>
     <script src="es/inicio/scripts/script.js"></script>
 </body>
 </html>

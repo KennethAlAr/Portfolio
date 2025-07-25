@@ -10,8 +10,8 @@
 <body>
     <nav class="barra-navegacion">
         <section class="menu-hamburguesa">
-            <div id="noDesplegado"><img src="../../images/icons/menu.png" alt="icono menú hamburguesa"></div>
-            <div id="desplegado">
+            <button id="noDesplegado"><img src="../../images/icons/menu.png" alt="icono menú hamburguesa"></button>
+            <section id="desplegado">
                 <img id="cerrar" src="../../images/icons/x.png" alt="icono X">
                 <p>Menú</p>
                 <ul>
@@ -20,14 +20,14 @@
                     <li><a href="../aviso_legal/index.html">Aviso Legal</a></li>
                     <li><a href="index.html">Cookies</a></li>
                 </ul>
-            </div>
+            </section>
         </section>
         <section class="boton-inicio">
             <a href="../../index.html"><img class="logo" src="../../images/logo KAA.png" alt="Logo KAA"></a>
         </section>
         <section class="menu-derecha">
-            <div><a href="en/home/index.html#principal"><img src="../../images/icons/arabica.png" alt="icono cambio idioma"></a></div>
-            <div id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.png" alt="icono cambio modo claro-oscuro"></div>
+            <button><a href="en/home/index.html#principal"><img src="../../images/icons/arabica.png" alt="icono cambio idioma"></a></button>
+            <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.png" alt="icono cambio modo claro-oscuro"></button>
         </section>                      
     </nav>
     <section id="zonaPrincipal" class="zona-principal">
@@ -42,7 +42,7 @@
                 </ul>
             </nav>
         </aside>
-        <div id="principal" class="seccion-principal">
+        <section id="principal" class="seccion-principal">
             <section id="politica-cookies" class="seccion">
                 <h2>POLÍTICA DE COOKIES</h2>
                 <p>
@@ -58,22 +58,22 @@
                     <a class="link" href="https://www.congreso.es/ca/cookies" target="_blank">https://www.congreso.es/ca/cookies</a>
                 </p>
             </section>
-        </div>
+        </section>
     </section>
     <footer>
-        <div class="footer-izquierda">
-            <div><a href="../aviso_legal/index.html"><p>Aviso Legal</p></a></div>
-            <div id="boton"><a href="index.html"><p>Cookies</p></a></div>
-        </div>
-        <div class="footer-derecha">
-            <div><a href="https://github.com/KennethAlAr" target="_blank"><p>Github</p></a></div>
-            <div><a href="https://www.linkedin.com/in/kennethalar" target="_blank"><p>LinkedIn</p></a></div>
-        </div>
+        <section class="footer-izquierda">
+            <a href="../aviso_legal/index.html">Aviso Legal</a>
+            <a id="boton" href="index.html">Cookies</a>
+        </section>
+        <section class="footer-derecha">
+            <a href="https://github.com/KennethAlAr" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/kennethalar" target="_blank">LinkedIn</a>
+        </section>
     </footer>
-    <div class="cookie-popup" id="cookiePopup">
+    <section class="cookie-popup" id="cookiePopup">
         <p>Esta web utiliza únicamente cookies necesarias para su funcionamiento básico y no almacena datos personales ni de seguimiento. <a href="es/cookies/index.html">Saber más</a></p>
         <button id="aceptarCookies">Aceptar</button>
-    </div>
+    </section>
     <script src="scripts/script.js"></script>
 </body>
 </html>

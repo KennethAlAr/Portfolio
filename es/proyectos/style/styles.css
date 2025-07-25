@@ -88,16 +88,17 @@ a{
     align-items: center;
 }
 
-.barra-navegacion div{
+.barra-navegacion button{
     height: 40px;
     width: 40px;
     border-radius: 50%;
     text-align: center;
     transition: 0.5s;
     background-color: var(--primary-background-color);
+    border: 0;
 }
 
-.barra-navegacion div:hover{
+.barra-navegacion button:hover{
     box-shadow: var(--shadow-mobile);
     cursor: pointer;
 }
@@ -287,27 +288,31 @@ footer{
     gap: 10px;
 }
 
-.footer-izquierda div, .footer-derecha div{
+.footer-izquierda a, .footer-derecha a{
     background-color: var(--primary-background-color);
     padding: 0 10px;
     border-radius: 5px;
     transition: 1s;
 }
 
-.footer-izquierda div:hover{
+.footer-izquierda a:hover{
     box-shadow: var(--shadow-mobile);
     cursor: pointer;
 }
 
-.footer-derecha div:hover{
+.footer-derecha a:hover{
     cursor: pointer;
 }
 
-.footer-izquierda p{
+.footer-izquierda a{    
+    font-family: "Sansation-light";
+    font-size: 14px;
     text-align: left;
 }
 
-.footer-derecha p{
+.footer-derecha a{
+    font-family: "Sansation-light";
+    font-size: 14px;
     text-align: right;
 }
 
@@ -432,7 +437,7 @@ footer{
         height: 100px;
     }
 
-    .barra-navegacion div{
+    .barra-navegacion button{
         height: 80px;
         width: 80px;
     }
@@ -498,8 +503,9 @@ footer{
         height: 100px;
     }
 
-    .footer-izquierda div, .footer-derecha div{
+    .footer-izquierda a, .footer-derecha a{
         border-radius: 10px;
+        font-size: 18px;
     }
 
     /*Cookies*/
