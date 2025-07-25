@@ -1,13 +1,17 @@
 /*Modo Oscuro*/
+const zonaPrincipal = document.getElementById('zonaPrincipal');
 const boton = document.getElementById("toogleTema");
 const botonToggle = document.querySelector('.boton-toggle');
 const seccionPrincipal = document.querySelector('.seccion-principal');
+const menuLateral = document.querySelector('.menu-lateral');
 
 boton.addEventListener("click", oscuro);
 
 function oscuro(){
+  zonaPrincipal.classList.toggle('oscuro');
   seccionPrincipal.classList.toggle("oscuro");
   botonToggle.classList.toggle("oscuro");
+  menuLateral.classList.toggle('oscuro');
   if (seccionPrincipal.classList.contains("oscuro")) {
     localStorage.setItem("modo", "oscuro");
   } else {

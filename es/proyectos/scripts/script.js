@@ -1,16 +1,20 @@
 /*Modo Oscuro*/
+const zonaPrincipal = document.getElementById('zonaPrincipal');
 const boton = document.getElementById("toogleTema");
 const tarjetas = document.querySelectorAll('.tarjeta');
 const botonToggle = document.querySelector('.boton-toggle');
 const seccionPrincipal = document.querySelector('.seccion-principal');
 const botonSubir = document.getElementById('botonArriba');
+const menuLateral = document.querySelector('.menu-lateral');
 
 boton.addEventListener("click", oscuro);
 
 function oscuro(){
+  zonaPrincipal.classList.toggle('oscuro');
   seccionPrincipal.classList.toggle("oscuro");
   botonToggle.classList.toggle("oscuro");
   botonSubir.classList.toggle("oscuro");
+  menuLateral.classList.toggle('oscuro');
   tarjetas.forEach(tarjeta => {
     tarjeta.classList.toggle("oscuro");
   });
@@ -71,8 +75,8 @@ window.addEventListener('scroll', () => {
   const scrollTotal = document.documentElement.scrollHeight;
   const scrollActual = window.innerHeight + window.scrollY;
 
-  if (scrollTotal - scrollActual < 80) {
-    const diferencia = 80 - (scrollTotal - scrollActual);
+  if (scrollTotal - scrollActual < 100) {
+    const diferencia = 100 - (scrollTotal - scrollActual);
     botonSubir.style.bottom = `${10 + diferencia}px`;
   } else {
     botonSubir.style.bottom = '10px';
