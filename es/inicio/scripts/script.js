@@ -107,7 +107,7 @@ window.addEventListener('scroll', () => {
   const seccionTop = seccion.getBoundingClientRect().bottom;
   const ventanaAltura = window.innerHeight;
 
-  if(seccionTop < ventanaAltura - 100){
+  if(seccionTop < ventanaAltura - 80){
     botonSubir.classList.add("visible");
   } else {
     botonSubir.classList.remove("visible");
@@ -118,8 +118,8 @@ window.addEventListener('scroll', () => {
   const scrollTotal = document.documentElement.scrollHeight;
   const scrollActual = window.innerHeight + window.scrollY;
 
-  if (scrollTotal - scrollActual < 100) {
-    const diferencia = 100 - (scrollTotal - scrollActual);
+  if (scrollTotal - scrollActual < 80) {
+    const diferencia = 80 - (scrollTotal - scrollActual);
     botonSubir.style.bottom = `${10 + diferencia}px`;
   } else {
     botonSubir.style.bottom = '10px';

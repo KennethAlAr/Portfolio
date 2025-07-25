@@ -430,12 +430,17 @@ footer{
     /*Footer*/
 
     footer{
-        height: 100px;
+        height: 50px;
+    }
+
+    .footer-izquierda, .footer-derecha{
+        flex-direction: row;
     }
 
     .footer-izquierda a, .footer-derecha a{
         border-radius: 10px;
         font-size: 18px;
+        height: 25px;
     }
 
     /*Cookies*/

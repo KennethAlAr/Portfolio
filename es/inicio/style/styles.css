@@ -919,12 +919,17 @@ footer{
     /*Footer*/
 
     footer{
-        height: 100px;
+        height: 50px;
+    }
+
+    .footer-izquierda, .footer-derecha{
+        flex-direction: row;
     }
 
     .footer-izquierda a, .footer-derecha a{
         font-size: 18px;
         border-radius: 10px;
+        height: 25px;
     }
 
     /*Cookies*/
