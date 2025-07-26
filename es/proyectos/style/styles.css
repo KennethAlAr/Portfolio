@@ -232,6 +232,7 @@ aside ul{
 aside li{
     font-family: "Sansation-regular";
     font-size: 18px;
+    padding: 3px 0;
 }
 
 /*Secciones*/
@@ -563,7 +564,7 @@ footer{
 
 }
 
-@media (min-width: 1600px){
+@media (min-width: 1300px){
 
     /*Menú navegación*/
 

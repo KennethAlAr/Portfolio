@@ -125,3 +125,38 @@ window.addEventListener('scroll', () => {
     botonSubir.style.bottom = '10px';
   }
 });
+
+/*Ajustar posición botones y flechas Slider*/
+
+const slider = document.querySelector('.slider');
+
+function ajustarBotones(){
+  const tarjetaVisible = document.querySelector('input:checked + .slide .tarjeta');
+  if (tarjetaVisible){
+    slider.style.height = tarjetaVisible.offsetHeight + 50 + "px";
+  }
+}
+
+ajustarBotones();
+
+window.addEventListener("load", ajustarBotones);
+window.addEventListener("resize", ajustarBotones);
+const botones = document.getElementsByName('boton-radio');
+botones.forEach(boton => {
+  boton.addEventListener("click", ajustarBotones);
+});
+
+function ajustarFlechas(){
+  const imagen = document.querySelector('.tarjeta img');
+  const flechas = document.querySelectorAll('.botones-laterales label span');
+  const alturaImagen = imagen.clientHeight;
+
+  flechas.forEach(span => {
+    span.style.top = ((alturaImagen/2) - 40) + 'px';
+  });
+}
+
+ajustarFlechas();
+
+window.addEventListener("load", ajustarFlechas);
+window.addEventListener("resize", ajustarFlechas);

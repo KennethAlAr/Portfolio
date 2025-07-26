@@ -107,7 +107,7 @@ window.addEventListener('scroll', () => {
   const seccionTop = seccion.getBoundingClientRect().bottom;
   const ventanaAltura = window.innerHeight;
 
-  if(seccionTop < ventanaAltura - 100){
+  if(seccionTop < ventanaAltura - 80){
     botonSubir.classList.add("visible");
   } else {
     botonSubir.classList.remove("visible");
@@ -118,10 +118,45 @@ window.addEventListener('scroll', () => {
   const scrollTotal = document.documentElement.scrollHeight;
   const scrollActual = window.innerHeight + window.scrollY;
 
-  if (scrollTotal - scrollActual < 100) {
-    const diferencia = 100 - (scrollTotal - scrollActual);
+  if (scrollTotal - scrollActual < 80) {
+    const diferencia = 80 - (scrollTotal - scrollActual);
     botonSubir.style.bottom = `${10 + diferencia}px`;
   } else {
     botonSubir.style.bottom = '10px';
   }
 });
+
+/*Ajustar posición botones y flechas Slider*/
+
+const slider = document.querySelector('.slider');
+
+function ajustarBotones(){
+  const tarjetaVisible = document.querySelector('input:checked + .slide .tarjeta');
+  if (tarjetaVisible){
+    slider.style.height = tarjetaVisible.offsetHeight + 50 + "px";
+  }
+}
+
+ajustarBotones();
+
+window.addEventListener("load", ajustarBotones);
+window.addEventListener("resize", ajustarBotones);
+const botones = document.getElementsByName('boton-radio');
+botones.forEach(boton => {
+  boton.addEventListener("click", ajustarBotones);
+});
+
+function ajustarFlechas(){
+  const imagen = document.querySelector('.tarjeta img');
+  const flechas = document.querySelectorAll('.botones-laterales label span');
+  const alturaImagen = imagen.clientHeight;
+
+  flechas.forEach(span => {
+    span.style.top = ((alturaImagen/2) - 40) + 'px';
+  });
+}
+
+ajustarFlechas();
+
+window.addEventListener("load", ajustarFlechas);
+window.addEventListener("resize", ajustarFlechas);

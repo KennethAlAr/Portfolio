@@ -270,6 +270,7 @@ aside ul{
 aside li{
     font-family: "Sansation-regular";
     font-size: 18px;
+    padding: 3px 0;
 }
 
 /*Secciones*/
@@ -318,35 +319,37 @@ aside li{
 /*Slider*/
 
 .slider{
+    padding: 0;
     width: 100%;
-    overflow: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    display: block;
+    position: relative;
 }
 
-.slider ul{
-    display: flex;
-    width: max-content;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.slider input{
+    display: none;
+}
+
+.slide{
+    display: block;
 }
 
 .tarjeta {
     background-color: var(--card-color);
     border-radius: 10px;
     box-shadow: var(--shadow);
-    width: calc(100vw - 50px);
-    margin: 20px;
+    width: 100%;
     text-align: center;
-    scroll-snap-type: start;
-    scroll-snap-align: center;
-    scroll-margin-top: 100px; /*Revisar, no funciona*/
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    display: block;
+    transform: scale(0);
+    transition: all 0.5s ease-in-out;
 }
 
 .tarjeta img{
     padding: 10px;
-    min-width: 100%;
+    width: 100%;
     object-fit: cover;
     aspect-ratio: 16 / 9;
     border-radius: 15px; /*Ponemos un border-radius de padding + 5 ya que estamos en border-box*/
@@ -355,7 +358,7 @@ aside li{
 .tarjeta h3{
     font-family: "Sansation-light";
     font-size: 24px;
-    padding: 10px 0px;
+    padding: 0;
 }
 
 .tarjeta p{
@@ -365,24 +368,65 @@ aside li{
     padding-top: 0px;
 }
 
-.botones-slider{
-    display: flex;
+.botones-laterales label{
+    width: 50px;
+    height: 100%;
+    display: none;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 0;
+    position: absolute;
 }
 
-.botones-slider a{
+input:checked + .slide .botones-laterales label{
+    display: flex;
+}
+
+.botones-laterales .siguiente{
+    right: 0;
+}
+
+.botones-laterales label span{
+    position: absolute;
+    top: 0;
+    opacity: 0.1;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    color: var(--button-color);
+    text-align: center;
+    font-size: 50px;
+    opacity: 1;
+    text-shadow: var(--shadow);
+}
+
+input:checked + .slide .tarjeta{
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+.botones-slider{
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: none;
+    position: absolute;
+    text-align: center;
+}
+
+.botones-slider .boton-slider{
+    top: -20px;
+    width: 15px;
+    height: 15px;
+    margin: 0 6px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
     background-color: var(--primary-background-color);
-    padding: 5px 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color box-sadow 5s;
 }
 
-.botones-slider a:hover{
+.botones-slider .boton-slider:hover{
+    cursor: pointer;
     background-color: var(--button-color);
-    box-shadow: var(--dark-shadow);
 }
 
 /*Tabla caja de herramientas*/
@@ -836,18 +880,16 @@ footer{
 
     .tarjeta {
         border-radius: 20px;
-        width: 440px;
-        margin: 20px 50px;
     }
 
     .tarjeta img{
         padding: 20px;
+        width: 100%;
         border-radius: 30px;
     }
 
     .tarjeta h3{
         font-size: 32px;
-        padding: 20px 0px;
     }
 
     .tarjeta p{
@@ -857,12 +899,11 @@ footer{
     }
 
     .botones-slider{
-        gap: 15px;
+        display: block;
     }
 
-    .botones-slider a{
-        padding: 8px 8px;
-        border-radius: 50%;
+    .botones-laterales{
+        display: none;
     }
 
     .herramientas img{
@@ -994,7 +1035,7 @@ footer{
 
 }
 
-@media (min-width: 1600px){
+@media (min-width: 1300px){
 
     /*Menú navegación*/
 
