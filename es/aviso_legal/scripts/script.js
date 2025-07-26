@@ -51,7 +51,7 @@ function cerrarMenu(){
 
 /*Popup de cookies*/
 
-const popup = document.getElementById("cookiePopup");
+const popup = document.getElementById("cookies");
 const botonPopup = document.getElementById("aceptarCookies");
 
 if (!localStorage.cookiesAccepted) {

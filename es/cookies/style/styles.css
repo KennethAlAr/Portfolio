@@ -124,7 +124,10 @@ a{
 .boton-inicio{
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+}
+
+.boton-inicio a:hover{
+    box-shadow: none;
 }
 
 .menu-derecha{
@@ -303,30 +306,39 @@ footer{
 
 /*Botón de cookies*/
 
-.cookie-popup{
+.cookies{
+    width: 100%;
+    justify-content: center;
+    display: none;
     position: fixed;
     bottom: 20px;
-    padding: 10px;
-    background-color: var(--button-color);
+}
+
+.cookie-popup{
     margin: 0 10px;
+    max-width: 1000px;
+    background-color: var(--button-color);
     border-radius: 10px;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 4;
 }
 
-.cookie-popup.show{
+.cookies.show{
     display: flex;
 }
 
 .cookie-popup button{
     background-color: var(--primary-background-color);
     padding: 3px 10px;
-    box-shadow: var(--shadow-mobile);
+    margin-bottom: 10px;
+    box-shadow: var(--shadow);
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-family: "Sansation-regular";
+    font-size: 14px;
 }
 
 .cookie-popup p{
@@ -462,6 +474,7 @@ footer{
 
     .cookie-popup button{
         background-color: var(--primary-background-color);
+        margin-bottom: 0;
         padding: 5px 20px;
         border-radius: 10px;
         font-size: 20px;
