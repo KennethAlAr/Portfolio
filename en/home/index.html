@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+nsaje<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,7 +65,7 @@
                 <p>Secciones</p>
                 <ul>
                     <li><a href="#sobre-mi">About me</a></li>
-                    <li><a href="#proyectos">Proyects</a></li>
+                    <li><a href="#proyectos">Projects</a></li>
                     <li><a href="#caja-herramientas">Toolbox</a></li>
                     <li><a href="#formacion">Education</a></li>
                     <li><a href="#experiencia">Experience</a></li>
@@ -383,15 +383,15 @@
         <h3>Let’s build something together</h3>
     </section>
     <div class="contenedor-contacto">
-        <div class="input">
-            <label>Name</label>
-            <input class="datos" type="text">
-            <label>Email</label>
-            <input class="datos" type="text">
-            <label>Message</label>
-            <textarea class="mensaje"></textarea>
-            <button class="enviar">Send</button>
-        </div>
+        <form class="input" action="https://formsubmit.co/info.kennethalonsoarce@gmail.com" method="POST">
+            <label for="nombre">Name</label>
+            <input id="nombre" name="nombre" class="datos" type="text" placeholder="Write your name here" required>
+            <label for="email">Email</label>
+            <input id="email" name="email" class="datos" type="email" placeholder="Write your email here" required>
+            <label for="mensaje">Message</label>
+            <textarea id="mensaje" name="mensaje" class="mensaje" placeholder="Write your message here" required></textarea>
+            <button class="enviar" type="submit">Accept</button>
+        </form>
         <div class="informacion">
             <section>
                 <img src="../../images/logo_KAA.webp" alt="KAA logo">
