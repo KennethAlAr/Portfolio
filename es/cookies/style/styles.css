@@ -54,7 +54,7 @@ h2{
 
 p{
     font-family: "SourceSans3-light";
-    font-size: 14px;
+    font-size: 15px;
     text-align: justify;
 }
 
@@ -172,7 +172,7 @@ a{
 #desplegado li{
     padding: 0 20px;
     font-family: "Sansation-light";
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #desplegado a{
@@ -201,21 +201,26 @@ a{
 /*Menú aside*/
 
 aside{
-    width: 200px;
+    width: 170px;
     height: 400px;
     text-align: right;
     flex-shrink: 0;
     display: none;
     z-index: 1;
-    margin-right: 20px;
+    margin-right: 50px;
     margin-top: 50px;
     position: sticky;
     top: 150px;
 }
 
+aside nav{
+    margin-left: auto;
+    width: max-content;
+}
+
 aside p{
     font-family: "Sansation-bold";
-    font-size: 18px;
+    font-size: 17px;
     padding: 10px 0;
     text-align: right;
     text-decoration: underline;
@@ -227,7 +232,8 @@ aside ul{
 
 aside li{
     font-family: "Sansation-regular";
-    font-size: 18px;
+    font-size: 17px;
+    padding: 3px 0;
 }
 
 /*Secciones*/
@@ -235,7 +241,7 @@ aside li{
 .seccion-principal{
     padding-bottom: 25px;
     background-color: var(--secondary-background-color);
-    padding-top: 100px;
+    padding-top: 80px;
     min-height: calc(100vh - 80px);
 }
 
@@ -390,56 +396,56 @@ footer{
     }
 
     h2{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     p{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     /*Barra de navegación*/
 
     .barra-navegacion{
-        height: 100px;
+        height: 80px;
     }
 
     .barra-navegacion button{
-        height: 80px;
-        width: 80px;
+        height: 50px;
+        width: 50px;
     }
 
     .barra-navegacion a{
-        height: 80px;
-        width: 80px;
+        height: 50px;
+        width: 50px;
     }
 
     .barra-navegacion img{
-        height: 50px;
-        margin: 15px;
+        height: 30px;
+        margin: 10px;
     }
 
     /*Menú hamburguesa*/
 
     #desplegado p{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     #desplegado li{
-        font-size: 20px;
+        font-size: 17px;
     }
 
     /*Secciones*/
 
     #zonaPrincipal{
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .seccion-principal{
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: calc(100vh - 250px);
+        min-height: calc(100vh - 150px);
     }
 
     .seccion{
@@ -460,7 +466,7 @@ footer{
 
     .footer-izquierda a, .footer-derecha a{
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 17px;
         height: 25px;
     }
 
@@ -477,7 +483,7 @@ footer{
         margin-bottom: 0;
         padding: 5px 20px;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 17px;
     }
 
 }
@@ -524,20 +530,6 @@ footer{
 
     .seccion{
         max-width: none;
-    }
-
-    .contenedor-contacto{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .contenedor-contacto section{
-        width: calc(50%);
-    }
-
-    .informacion{
-        padding-top: 40px;
     }
 
 }
