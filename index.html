@@ -11,45 +11,47 @@
     <link rel="stylesheet" href="es/inicio/style/styles.css">
 </head>
 <body>
-    <header id="inicio" class="hero">
-        <img src="images/Caricatura.webp" alt="Caricatura Kenneth">
-        <h3>¡Hola! Mi nombre es</h3>
-        <h1>KENNETH ALONSO</h1>
-        <h4>Estudiante de Desarrollo de Aplicaciones Multiplataforma</h4>
+    <header>
+        <section id="inicio" class="hero">
+            <img src="images/Caricatura.webp" alt="Caricatura Kenneth">
+            <h3>¡Hola! Mi nombre es</h3>
+            <h1>KENNETH ALONSO</h1>
+            <h4>Estudiante de Desarrollo de Aplicaciones Multiplataforma</h4>
+        </section>
+        <nav class="barra-navegacion">
+            <div class="menu-hamburguesa">
+                <button id="noDesplegado"><img src="images/icons/menu.webp" alt="icono menú hamburguesa"></button>
+                <div id="desplegado">
+                    <img id="cerrar" src="images/icons/x.webp" alt="icono X">
+                    <p>Menú</p>
+                    <ul>
+                        <li><a href="index.html#sobre-mi">Inicio</a></li>
+                        <li><a href="es/proyectos/index.html">Proyectos</a></li>
+                        <li><a href="es/aviso_legal/index.html">Aviso Legal</a></li>
+                        <li><a href="es/cookies/index.html">Cookies</a></li>
+                    </ul>
+                    <p>Secciones</p>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre mí</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#caja-herramientas">Caja de Herramientas</a></li>
+                        <li><a href="#formacion">Formación</a></li>
+                        <li><a href="#experiencia">Experiencia</a></li>
+                        <li><a href="#intereses">Intereses</a></li>
+                        <li><a href="#contacta-conmigo">Contacta Conmigo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boton-inicio">
+                <a href="#inicio"><img class="logo" src="images/logo_KAA.webp" alt="Logo KAA"></a>
+            </div>
+            <div class="menu-derecha">
+                <a href="en/home/index.html#principal"><img src="images/icons/arabica.webp" alt="icono cambio idioma"></a>
+                <button id="toogleTema" class="boton-toggle"><img src="images/icons/dia-y-noche.webp" alt="icono cambio modo claro-oscuro"></button>
+            </div>                      
+        </nav>
     </header>
-    <nav class="barra-navegacion">
-        <section class="menu-hamburguesa">
-            <button id="noDesplegado"><img src="images/icons/menu.webp" alt="icono menú hamburguesa"></button>
-            <section id="desplegado">
-                <img id="cerrar" src="images/icons/x.webp" alt="icono X">
-                <p>Menú</p>
-                <ul>
-                    <li><a href="index.html#sobre-mi">Inicio</a></li>
-                    <li><a href="es/proyectos/index.html">Proyectos</a></li>
-                    <li><a href="es/aviso_legal/index.html">Aviso Legal</a></li>
-                    <li><a href="es/cookies/index.html">Cookies</a></li>
-                </ul>
-                <p>Secciones</p>
-                <ul>
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#caja-herramientas">Caja de Herramientas</a></li>
-                    <li><a href="#formacion">Formación</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#intereses">Intereses</a></li>
-                    <li><a href="#contacta-conmigo">Contacta Conmigo</a></li>
-                </ul>
-            </section>
-        </section>
-        <section class="boton-inicio">
-            <a href="#inicio"><img class="logo" src="images/logo_KAA.webp" alt="Logo KAA"></a>
-        </section>
-        <section class="menu-derecha">
-            <a href="en/home/index.html#principal"><img src="images/icons/arabica.webp" alt="icono cambio idioma"></a>
-            <button id="toogleTema" class="boton-toggle"><img src="images/icons/dia-y-noche.webp" alt="icono cambio modo claro-oscuro"></button>
-        </section>                      
-    </nav>
-    <section id="zonaPrincipal" class="zona-principal">
+    <main id="zonaPrincipal" class="zona-principal">
         <aside class="menu-lateral">
             <nav>
                 <p>Menú</p>
@@ -71,7 +73,7 @@
                 </ul>
             </nav>
         </aside>
-        <section id="principal" class="seccion-principal">
+        <div id="principal" class="seccion-principal">
             <section id="sobre-mi" class="seccion">
                 <h2>SOBRE MÍ</h2>
                 <p>
@@ -80,9 +82,9 @@
                     Me encanta combinar la creatividad que desarrollé en arquitectura con la lógica y el orden que exige la programación, y creo que esa mezcla me aporta una visión diferente y valiosa para resolver problemas y crear soluciones prácticas. Estoy muy ilusionado con este cambio profesional y con todo lo que está por venir.
                 </p>
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <img id="imagenGalgos" class="galgos" src="images/Galgos_negro.webp" alt="silueta de dos galgos" loading="lazy">
-            </section>
+            </div>
             <section id="proyectos" class="seccion">
                 <h2>PROYECTOS</h2>
                 <p>
@@ -91,7 +93,7 @@
                 </p>
                 <a class="boton-proyectos" href="es/proyectos/index.html"><h4>Ver todos los Proyectos</h4></a>        
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <section class="slider">
                     <input type="radio" name="boton-radio" id="tarjeta1" checked>
                     <div class="slide">
@@ -201,7 +203,7 @@
                             <label for="tarjeta1" class="siguiente"><span>&#x203a;</span></label>
                         </nav>
                     </div>
-                    <section class="botones-slider">
+                    <div class="botones-slider">
                         <label for="tarjeta1" class="boton-slider" id="botonTarjeta1"></label>
                         <label for="tarjeta2" class="boton-slider" id="botonTarjeta2"></label>
                         <label for="tarjeta3" class="boton-slider" id="botonTarjeta3"></label>
@@ -211,16 +213,16 @@
                         <label for="tarjeta7" class="boton-slider" id="botonTarjeta7"></label>
                         <label for="tarjeta8" class="boton-slider" id="botonTarjeta8"></label>
                         <label for="tarjeta9" class="boton-slider" id="botonTarjeta9"></label>
-                    </section>
+                    </div>
                 </section>
-            </section>
+            </div>
             <section id="caja-herramientas" class="seccion">
                 <h2>CAJA DE HERRAMIENTAS</h2>
                 <p>
                     En esta sección presento los lenguajes de programación, lenguajes de marca y bases de datos que utilizo habitualmente en mis proyectos. Son las tecnologías clave con las que desarrollo y diseño aplicaciones, desde la estructura y la lógica hasta el almacenamiento de datos. Conocer y dominar estas herramientas me permite crear soluciones funcionales, escalables y bien organizadas.
                 </p>
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <table class="herramientas">
                     <tr>
                         <td><img class="icono" src="images/icons/java.webp" alt="icono de java"></td>
@@ -241,14 +243,14 @@
                         <td><p>JavaScript</p></td>
                     </tr>
                 </table>
-            </section>
+            </div>
             <section id="formacion" class="seccion">
                 <h2>FORMACIÓN</h2>
                 <p>
                     A lo largo de mi trayectoria, he apostado por una formación continua que me ha permitido adquirir conocimientos sólidos y actualizados en diversas áreas. Desde mis estudios iniciales en arquitectura hasta mi actual especialización en Desarrollo de Aplicaciones Multiplataforma, siempre he buscado combinar teoría y práctica para crecer profesionalmente. Esta base formativa me proporciona una visión amplia y me prepara para adaptarme a los cambios y demandas del sector tecnológico.
                 </p>
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <table class="curriculum">
                     <tr>
                         <td class="tiempo"><p>2025 Cursando</p></td>
@@ -306,14 +308,14 @@
                         </td>
                     </tr>
                 </table>
-            </section>
+            </div>
             <section id="experiencia" class="seccion">
                 <h2>EXPERIENCIA</h2>
                 <p>
                     A lo largo de mi carrera he trabajado en distintos entornos profesionales que me han permitido desarrollar habilidades clave como la responsabilidad, el trabajo en equipo, la adaptabilidad y la resolución de problemas. Esta trayectoria me ha dado una base sólida para enfrentar nuevos desafíos y crecer en cualquier ámbito en el que me involucre.
                 </p>
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <table class="curriculum">
                     <tr>
                         <td class="tiempo"><p>2021 - 2025</p></td>
@@ -360,7 +362,7 @@
                         </td>
                     </tr>
                 </table>
-            </section>
+            </div>
             <section id="intereses" class="seccion">
                 <h2>INTERESES</h2>
                 <p>
@@ -369,53 +371,53 @@
                     Me interesa todo lo que me permita aprender algo nuevo sin que parezca que estoy estudiando, y creo que esas pequeñas curiosidades del día a día son las que también me empujan a seguir creciendo como persona y como desarrollador.
                 </p>
             </section>
-            <section class="intereses seccion">
+            <div class="intereses seccion">
                 <img src="images/aficiones.webp" alt="Figura pintada" loading="lazy">
-            </section>
-        </section>
-    </section>
+            </div>
+        </div>
+    </main>
     <section id="contacta-conmigo" class="contacto">
         <h2>CONTACTA CONMIGO</h2>
         <h3>Vamos a crear algo juntos</h3>
     </section>
-    <section class="contenedor-contacto">
-        <section class="input">
+    <div class="contenedor-contacto">
+        <form class="input" action="https://formsubmit.co/info.kennethalonsoarce@gmail.com" method="POST">
             <label for="nombre">Nombre</label>
-            <input id="nombre" class="datos" type="text">
+            <input name="nombre" class="datos" type="text" required>
             <label for="email">Correo electrónico</label>
-            <input id="email" class="datos" type="text">
+            <input name="email" class="datos" type="email" required>
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" class="mensaje"></textarea>
-            <button class="enviar">Enviar</button>
-        </section>
-        <section class="informacion">
+            <textarea name="mensaje" class="mensaje"></textarea required>
+            <button class="enviar" type="submit">Enviar</button>
+        </form>
+        <div class="informacion">
             <section>
                 <img src="images/logo_KAA.webp" alt="logo KAA">
                 <h3>Kenneth Alonso Arce</h3>
             </section>
-            <p>kennethalonso@email.com</p>
+            <p>kennethalonsoarce@gmail.com</p>
             <p>+34 600 00 00 01</p>
             <a href="https://github.com/KennethAlAr" target="_blank"><img src="images/icons/github.webp" alt="icono github"></a>
             <a href="https://www.linkedin.com/in/kennethalar" target="_blank"><img src="images/icons/linkedin_negro.webp" alt="icono linkedin"></a>
-        </section>
-    </section>
+        </div>
+    </div>
     <footer>
-        <section class="footer-izquierda">
+        <div class="footer-izquierda">
             <a href="es/aviso_legal/index.html">Aviso Legal</a>
             <a href="es/cookies/index.html">Cookies</a>
-        </section>
-        <section class="footer-derecha">
+        </div>
+        <div class="footer-derecha">
             <a href="https://github.com/KennethAlAr" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/kennethalar" target="_blank">LinkedIn</a>
-        </section>
+        </div>
     </footer>
     <a id="botonArriba" class="arriba" href="#sobre-mi"><img src="images/icons/flechas-arriba.webp" alt="icono flecha arriba"></a>
-    <section id="cookies" class="cookies">
-        <section class="cookie-popup" id="cookiePopup">
+    <div id="cookies" class="cookies">
+        <div class="cookie-popup" id="cookiePopup">
             <p>Esta web utiliza únicamente cookies necesarias para su funcionamiento básico y no almacena datos personales ni de seguimiento. <a href="es/cookies/index.html">Saber más</a></p>
             <button id="aceptarCookies">Aceptar</button>
-        </section>
-    </section>
+        </div>
+    </div>
     <script src="es/inicio/scripts/script.js"></script>
 </body>
 </html>

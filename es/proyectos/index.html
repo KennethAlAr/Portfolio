@@ -11,41 +11,43 @@
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <nav class="barra-navegacion">
-        <section class="menu-hamburguesa">
-            <button id="noDesplegado"><img src="../../images/icons/menu.webp" alt="icono menú hamburguesa"></button>
-            <section id="desplegado">
-                <img id="cerrar" src="../../images/icons/x.webp" alt="icono X">
-                <p>Menú</p>
-                <ul>
-                    <li><a href="../../index.html#sobre-mi">Inicio</a></li>
-                    <li><a href="index.html">Proyectos</a></li>
-                    <li><a href="../aviso_legal/index.html">Aviso Legal</a></li>
-                    <li><a href="../cookies/index.html">Cookies</a></li>
-                </ul>
-                <p>Proyectos</p>
-                <ul>
-                    <li><a href="#proyecto1">EduQuiz</a></li>
-                    <li><a href="#proyecto2">GameHub Manager</a></li>
-                    <li><a href="#proyecto3">Super Pirate World</a></li>
-                    <li><a href="#proyecto4">Roll for Initiative</a></li>
-                    <li><a href="#proyecto5">TimeTrack Pro</a></li>
-                    <li><a href="#proyecto6">Notas Seguras</a></li>
-                    <li><a href="#proyecto7">AutoTest</a></li>
-                    <li><a href="#proyecto8">EcoStore</a></li>
-                    <li><a href="#proyecto9">Rescue Pets</a></li>
-                </ul>
-            </section>
-        </section>
-        <section class="boton-inicio">
-            <a href="../../index.html"><img class="logo" src="../../images/logo_KAA.webp" alt="Logo KAA"></a>
-        </section>
-        <section class="menu-derecha">
-            <a href="../../en/projects/index.html"><img src="../../images/icons/arabica.webp" alt="icono cambio idioma"></a>
-            <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.webp" alt="icono cambio modo claro-oscuro"></button>
-        </section>                      
-    </nav>
-    <section id="zonaPrincipal" class="zona-principal">
+    <header>
+        <nav class="barra-navegacion">
+            <div class="menu-hamburguesa">
+                <button id="noDesplegado"><img src="../../images/icons/menu.webp" alt="icono menú hamburguesa"></button>
+                <div id="desplegado">
+                    <img id="cerrar" src="../../images/icons/x.webp" alt="icono X">
+                    <p>Menú</p>
+                    <ul>
+                        <li><a href="../../index.html#sobre-mi">Inicio</a></li>
+                        <li><a href="index.html">Proyectos</a></li>
+                        <li><a href="../aviso_legal/index.html">Aviso Legal</a></li>
+                        <li><a href="../cookies/index.html">Cookies</a></li>
+                    </ul>
+                    <p>Proyectos</p>
+                    <ul>
+                        <li><a href="#proyecto1">EduQuiz</a></li>
+                        <li><a href="#proyecto2">GameHub Manager</a></li>
+                        <li><a href="#proyecto3">Super Pirate World</a></li>
+                        <li><a href="#proyecto4">Roll for Initiative</a></li>
+                        <li><a href="#proyecto5">TimeTrack Pro</a></li>
+                        <li><a href="#proyecto6">Notas Seguras</a></li>
+                        <li><a href="#proyecto7">AutoTest</a></li>
+                        <li><a href="#proyecto8">EcoStore</a></li>
+                        <li><a href="#proyecto9">Rescue Pets</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boton-inicio">
+                <a href="../../index.html"><img class="logo" src="../../images/logo_KAA.webp" alt="Logo KAA"></a>
+            </div>
+            <div class="menu-derecha">
+                <a href="../../en/projects/index.html"><img src="../../images/icons/arabica.webp" alt="icono cambio idioma"></a>
+                <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.webp" alt="icono cambio modo claro-oscuro"></button>
+            </div>                      
+        </nav>
+    </header>
+    <main id="zonaPrincipal" class="zona-principal">
         <aside class="menu-lateral">
             <nav>
                 <p>Menú</p>
@@ -69,7 +71,7 @@
                 </ul>
             </nav>
         </aside>
-        <section id="principal" class="seccion-principal">
+        <div id="principal" class="seccion-principal">
             <section id="proyectos" class="seccion">
                 <h2>PROYECTOS</h2>
                 <ul class="tarjetas">
@@ -120,25 +122,25 @@
                     </li>
                 </ul>         
             </section>
-        </section>
-    </section>
+        </div>
+    </main>
     <footer>
-        <section class="footer-izquierda">
+        <div class="footer-izquierda">
             <a href="../aviso_legal/index.html">Aviso Legal</a>
             <a href="../cookies/index.html">Cookies</a>
-        </section>
-        <section class="footer-derecha">
+        </div>
+        <div class="footer-derecha">
             <a href="https://github.com/KennethAlAr" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/kennethalar" target="_blank">LinkedIn</a>
-        </section>
+        </div>
     </footer>
     <a id="botonArriba" class="arriba" href="#principal"><img src="../../images/icons/flechas-arriba.webp" alt="icono flecha arriba"></a>
-    <section id="cookies" class="cookies">
-        <section class="cookie-popup" id="cookiePopup">
+    <div id="cookies" class="cookies">
+        <div class="cookie-popup" id="cookiePopup">
             <p>Esta web utiliza únicamente cookies necesarias para su funcionamiento básico y no almacena datos personales ni de seguimiento. <a href="../cookies/index.html">Saber más</a></p>
             <button id="aceptarCookies">Aceptar</button>
-        </section>
-    </section>
+        </div>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>

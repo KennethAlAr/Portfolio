@@ -11,29 +11,31 @@
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <nav class="barra-navegacion">
-        <section class="menu-hamburguesa">
-            <button id="noDesplegado"><img src="../../images/icons/menu.webp" alt="icono menú hamburguesa"></button>
-            <section id="desplegado">
-                <img id="cerrar" src="../../images/icons/x.webp" alt="icono X">
-                <p>Menú</p>
-                <ul>
-                    <li><a href="../../index.html#sobre-mi">Inicio</a></li>
-                    <li><a href="../proyectos/index.html">Proyectos</a></li>
-                    <li><a href="../aviso_legal/index.html">Aviso Legal</a></li>
-                    <li><a href="index.html">Cookies</a></li>
-                </ul>
-            </section>
-        </section>
-        <section class="boton-inicio">
-            <a href="../../index.html"><img class="logo" src="../../images/logo_KAA.webp" alt="Logo KAA"></a>
-        </section>
-        <section class="menu-derecha">
-            <a href="../../en/cookies/index.html"><img src="../../images/icons/arabica.webp" alt="icono cambio idioma"></a>
-            <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.webp" alt="icono cambio modo claro-oscuro"></button>
-        </section>                      
-    </nav>
-    <section id="zonaPrincipal" class="zona-principal">
+    <header>
+        <nav class="barra-navegacion">
+            <div class="menu-hamburguesa">
+                <button id="noDesplegado"><img src="../../images/icons/menu.webp" alt="icono menú hamburguesa"></button>
+                <div id="desplegado">
+                    <img id="cerrar" src="../../images/icons/x.webp" alt="icono X">
+                    <p>Menú</p>
+                    <ul>
+                        <li><a href="../../index.html#sobre-mi">Inicio</a></li>
+                        <li><a href="../proyectos/index.html">Proyectos</a></li>
+                        <li><a href="../aviso_legal/index.html">Aviso Legal</a></li>
+                        <li><a href="index.html">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boton-inicio">
+                <a href="../../index.html"><img class="logo" src="../../images/logo_KAA.webp" alt="Logo KAA"></a>
+            </div>
+            <div class="menu-derecha">
+                <a href="../../en/cookies/index.html"><img src="../../images/icons/arabica.webp" alt="icono cambio idioma"></a>
+                <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.webp" alt="icono cambio modo claro-oscuro"></button>
+            </div>                      
+        </nav>
+    </header>
+    <main id="zonaPrincipal" class="zona-principal">
         <aside class="menu-lateral">
             <nav>
                 <p>Menú</p>
@@ -45,7 +47,7 @@
                 </ul>
             </nav>
         </aside>
-        <section id="principal" class="seccion-principal">
+        <div id="principal" class="seccion-principal">
             <section id="politica-cookies" class="seccion">
                 <h2>POLÍTICA DE COOKIES</h2>
                 <p>
@@ -61,24 +63,24 @@
                     <a class="link" href="https://www.congreso.es/ca/cookies" target="_blank">https://www.congreso.es/ca/cookies</a>
                 </p>
             </section>
-        </section>
-    </section>
+        </div>
+    </main>
     <footer>
-        <section class="footer-izquierda">
+        <div class="footer-izquierda">
             <a href="../aviso_legal/index.html">Aviso Legal</a>
             <a id="boton" href="index.html">Cookies</a>
-        </section>
-        <section class="footer-derecha">
+        </div>
+        <div class="footer-derecha">
             <a href="https://github.com/KennethAlAr" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/kennethalar" target="_blank">LinkedIn</a>
-        </section>
+        </div>
     </footer>
-    <section id="cookies" class="cookies">
-        <section class="cookie-popup" id="cookiePopup">
+    <div id="cookies" class="cookies">
+        <div class="cookie-popup" id="cookiePopup">
             <p>Esta web utiliza únicamente cookies necesarias para su funcionamiento básico y no almacena datos personales ni de seguimiento. <a href="index.html">Saber más</a></p>
             <button id="aceptarCookies">Aceptar</button>
-        </section>
-    </section>
+        </div>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>

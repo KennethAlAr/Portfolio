@@ -76,7 +76,7 @@ a{
     z-index: 2;
 }
 
-.barra-navegacion section{
+.barra-navegacion div{
     display: flex;
     align-items: center;
 }
@@ -211,7 +211,7 @@ aside{
     margin-right: 50px;
     margin-top: 50px;
     position: sticky;
-    top: 150px;
+    top: 100px;
 }
 
 aside nav{

@@ -12,41 +12,43 @@
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <nav class="barra-navegacion">
-        <section class="menu-hamburguesa">
-            <button id="noDesplegado"><img src="../../images/icons/menu.webp" alt="burger menu icon"></button>
-            <section id="desplegado">
-                <img id="cerrar" src="../../images/icons/x.webp" alt="X icon">
-                <p>Menu</p>
-                <ul>
-                    <li><a href="../home/index.html#sobre-mi">Home</a></li>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="../legal_notice/index.html">Legal Notice</a></li>
-                    <li><a href="../cookies/index.html">Cookies</a></li>
-                </ul>
-                <p>Projects</p>
-                <ul>
-                    <li><a href="#proyecto1">EduQuiz</a></li>
-                    <li><a href="#proyecto2">GameHub Manager</a></li>
-                    <li><a href="#proyecto3">Super Pirate World</a></li>
-                    <li><a href="#proyecto4">Roll for Initiative</a></li>
-                    <li><a href="#proyecto5">TimeTrack Pro</a></li>
-                    <li><a href="#proyecto6">Notas Seguras</a></li>
-                    <li><a href="#proyecto7">AutoTest</a></li>
-                    <li><a href="#proyecto8">EcoStore</a></li>
-                    <li><a href="#proyecto9">Rescue Pets</a></li>
-                </ul>
-            </section>
-        </section>
-        <section class="boton-inicio">
-            <a href="../home/index.html"><img class="logo" src="../../images/logo_KAA.webp" alt="KAA logo"></a>
-        </section>
-        <section class="menu-derecha">
-            <a id="cambioIdioma" href="../../es/proyectos/index.html"><img src="../../images/icons/arabica.webp" alt="change language icon"></a>
-            <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.webp" alt="light/dark mode change icon"></button>
-        </section>                      
-    </nav>
-    <section id="zonaPrincipal" class="zona-principal">
+    <header>
+        <nav class="barra-navegacion">
+            <div class="menu-hamburguesa">
+                <button id="noDesplegado"><img src="../../images/icons/menu.webp" alt="burger menu icon"></button>
+                <div id="desplegado">
+                    <img id="cerrar" src="../../images/icons/x.webp" alt="X icon">
+                    <p>Menu</p>
+                    <ul>
+                        <li><a href="../home/index.html#sobre-mi">Home</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="../legal_notice/index.html">Legal Notice</a></li>
+                        <li><a href="../cookies/index.html">Cookies</a></li>
+                    </ul>
+                    <p>Projects</p>
+                    <ul>
+                        <li><a href="#proyecto1">EduQuiz</a></li>
+                        <li><a href="#proyecto2">GameHub Manager</a></li>
+                        <li><a href="#proyecto3">Super Pirate World</a></li>
+                        <li><a href="#proyecto4">Roll for Initiative</a></li>
+                        <li><a href="#proyecto5">TimeTrack Pro</a></li>
+                        <li><a href="#proyecto6">Notas Seguras</a></li>
+                        <li><a href="#proyecto7">AutoTest</a></li>
+                        <li><a href="#proyecto8">EcoStore</a></li>
+                        <li><a href="#proyecto9">Rescue Pets</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boton-inicio">
+                <a href="../home/index.html"><img class="logo" src="../../images/logo_KAA.webp" alt="KAA logo"></a>
+            </div>
+            <div class="menu-derecha">
+                <a id="cambioIdioma" href="../../es/proyectos/index.html"><img src="../../images/icons/arabica.webp" alt="change language icon"></a>
+                <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.webp" alt="light/dark mode change icon"></button>
+            </div>                      
+        </nav>
+    </header>
+    <main id="zonaPrincipal" class="zona-principal">
         <aside class="menu-lateral">
             <nav>
                 <p>Menu</p>
@@ -70,7 +72,7 @@
                 </ul>
             </nav>
         </aside>
-        <section id="principal" class="seccion-principal">
+        <div id="principal" class="seccion-principal">
             <section id="proyectos" class="seccion">
                 <h2>PROJECTS</h2>
                 <ul class="tarjetas">
@@ -121,25 +123,25 @@
                     </li>
                 </ul>         
             </section>
-        </section>
-    </section>
+        </div>
+    </main>
     <footer>
-        <section class="footer-izquierda">
+        <div class="footer-izquierda">
             <a href="../legal_notice/index.html">Legal Notice</a>
             <a href="../cookies/index.html">Cookies</a>
-        </section>
-        <section class="footer-derecha">
+        </div>
+        <div class="footer-derecha">
             <a href="https://github.com/KennethAlAr" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/kennethalar" target="_blank">LinkedIn</a>
-        </section>
+        </div>
     </footer>
     <a id="botonArriba" class="arriba" href="#principal"><img src="../../images/icons/flechas-arriba.webp" alt="up-arrow icon"></a>
-    <section id="cookies" class="cookies">
-        <section class="cookie-popup" id="cookiePopup">
+    <div id="cookies" class="cookies">
+        <div class="cookie-popup" id="cookiePopup">
             <p>This website uses only the cookies necessary for its basic functionality and does not store any personal or tracking data. <a href="../cookies/index.html">Learn more</a></p>
             <button id="aceptarCookies">Accept</button>
-        </section>
-    </section>
+        </div>
+    </div>
     <script src="../../es/proyectos/scripts/script.js"></script>
 </body>
 </html>

@@ -12,45 +12,47 @@
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <header id="inicio" class="hero">
-        <img src="../../images/Caricatura.webp" alt="Kenneth caricature">
-        <h3>Hi! My name is</h3>
-        <h1>KENNETH ALONSO</h1>
-        <h4>Multiplatform Developer Student</h4>
+    <header>
+        <section id="inicio" class="hero">
+            <img src="../../images/Caricatura.webp" alt="Kenneth caricature">
+            <h3>Hi! My name is</h3>
+            <h1>KENNETH ALONSO</h1>
+            <h4>Multiplatform Developer Student</h4>
+        </section>
+        <nav class="barra-navegacion">
+            <div class="menu-hamburguesa">
+                <button id="noDesplegado"><img src="../../images/icons/menu.webp" alt="menu burger icon"></button>
+                <div id="desplegado">
+                    <img id="cerrar" src="../../images/icons/x.webp" alt="X icon">
+                    <p>Menu</p>
+                    <ul>
+                        <li><a href="index.html#sobre-mi">Home</a></li>
+                        <li><a href="../projects/index.html">Projects</a></li>
+                        <li><a href="../legal_notice/index.html">Legal Notice</a></li>
+                        <li><a href="../cookies/index.html">Cookies</a></li>
+                    </ul>
+                    <p>Secciones</p>
+                    <ul>
+                        <li><a href="#sobre-mi">About me</a></li>
+                        <li><a href="#proyectos">Projects</a></li>
+                        <li><a href="#caja-herramientas">Toolbox</a></li>
+                        <li><a href="#formacion">Education</a></li>
+                        <li><a href="#experiencia">Experience</a></li>
+                        <li><a href="#intereses">Interests</a></li>
+                        <li><a href="#contacta-conmigo">Contact me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="boton-inicio">
+                <a href="#inicio"><img class="logo" src="../../images/logo_KAA.webp" alt="KAA logo"></a>
+            </div>
+            <div class="menu-derecha">
+                <a id="cambioIdioma" href="../../index.html#principal"><img src="../../images/icons/arabica.webp" alt="change language icon"></a>
+                <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.webp" alt="light/dark mode change icon"></button>
+            </div>                      
+        </nav>
     </header>
-    <nav class="barra-navegacion">
-        <section class="menu-hamburguesa">
-            <button id="noDesplegado"><img src="../../images/icons/menu.webp" alt="menu burger icon"></button>
-            <section id="desplegado">
-                <img id="cerrar" src="../../images/icons/x.webp" alt="X icon">
-                <p>Menu</p>
-                <ul>
-                    <li><a href="index.html#sobre-mi">Home</a></li>
-                    <li><a href="../projects/index.html">Projects</a></li>
-                    <li><a href="../legal_notice/index.html">Legal Notice</a></li>
-                    <li><a href="../cookies/index.html">Cookies</a></li>
-                </ul>
-                <p>Secciones</p>
-                <ul>
-                    <li><a href="#sobre-mi">About me</a></li>
-                    <li><a href="#proyectos">Projects</a></li>
-                    <li><a href="#caja-herramientas">Toolbox</a></li>
-                    <li><a href="#formacion">Education</a></li>
-                    <li><a href="#experiencia">Experience</a></li>
-                    <li><a href="#intereses">Interests</a></li>
-                    <li><a href="#contacta-conmigo">Contact me</a></li>
-                </ul>
-            </section>
-        </section>
-        <section class="boton-inicio">
-            <a href="#inicio"><img class="logo" src="../../images/logo_KAA.webp" alt="KAA logo"></a>
-        </section>
-        <section class="menu-derecha">
-            <a id="cambioIdioma" href="../../index.html#principal"><img src="../../images/icons/arabica.webp" alt="change language icon"></a>
-            <button id="toogleTema" class="boton-toggle"><img src="../../images/icons/dia-y-noche.webp" alt="light/dark mode change icon"></button>
-        </section>                      
-    </nav>
-    <section id="zonaPrincipal" class="zona-principal">
+    <main id="zonaPrincipal" class="zona-principal">
         <aside class="menu-lateral">
             <nav>
                 <p>Menu</p>
@@ -72,7 +74,7 @@
                 </ul>
             </nav>
         </aside>
-        <section id="principal" class="seccion-principal">
+        <div id="principal" class="seccion-principal">
             <section id="sobre-mi" class="seccion">
                 <h2>ABOUT ME</h2>
                 <p>
@@ -81,9 +83,9 @@
                     I love combining the creativity I developed in architecture with the logic and structure that programming requires. I believe this mix gives me a unique perspective to solve problems and build practical solutions. I’m really excited about this career change and everything that’s ahead.
                 </p>
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <img id="imagenGalgos" class="galgos" src="../../images/Galgos_negro.webp" alt="Silhouette of two greyhounds" loading="lazy">
-            </section>
+            </div>
             <section id="proyectos" class="seccion">
                 <h2>PROJECTS</h2>
                 <p>
@@ -92,7 +94,7 @@
                 </p>
                 <a class="boton-proyectos" href="../projects/index.html"><h4>Browse all Projects</h4></a>        
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <section class="slider">
                     <input type="radio" name="boton-radio" id="tarjeta1" checked>
                     <div class="slide">
@@ -202,7 +204,7 @@
                             <label for="tarjeta1" class="siguiente"><span>&#x203a;</span></label>
                         </nav>
                     </div>
-                    <section class="botones-slider">
+                    <div class="botones-slider">
                         <label for="tarjeta1" class="boton-slider" id="botonTarjeta1"></label>
                         <label for="tarjeta2" class="boton-slider" id="botonTarjeta2"></label>
                         <label for="tarjeta3" class="boton-slider" id="botonTarjeta3"></label>
@@ -212,16 +214,16 @@
                         <label for="tarjeta7" class="boton-slider" id="botonTarjeta7"></label>
                         <label for="tarjeta8" class="boton-slider" id="botonTarjeta8"></label>
                         <label for="tarjeta9" class="boton-slider" id="botonTarjeta9"></label>
-                    </section>
+                    </div>
                 </section>
-            </section>
+            </div>
             <section id="caja-herramientas" class="seccion">
                 <h2>TOOLBOX</h2>
                 <p>
                     In this section, I showcase the programming languages, markup languages, and databases I regularly use in my projects. These are the core technologies I rely on to develop and design applications, covering everything from structure and logic to data storage. Being familiar and proficient with these tools allows me to create functional, scalable, and well-organized solutions.
                 </p>
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <table class="herramientas">
                     <tr>
                         <td><img class="icono" src="../../images/icons/java.webp" alt="java icon"></td>
@@ -242,14 +244,14 @@
                         <td><p>JavaScript</p></td>
                     </tr>
                 </table>
-            </section>
+            </div>
             <section id="formacion" class="seccion">
                 <h2>EDUCATION</h2>
                 <p>
                     Throughout my career, I’ve committed to continuous learning, gaining solid and up-to-date knowledge across different fields. From my initial studies in architecture to my current specialization in Multiplatform Application Development, I’ve always aimed to blend theory and practice to grow professionally. This educational foundation gives me a broad perspective and prepares me to adapt to the ever-changing demands of the tech industry.
                 </p>
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <table class="curriculum">
                     <tr>
                         <td class="tiempo"><p>2025 Currently</p></td>
@@ -307,14 +309,14 @@
                         </td>
                     </tr>
                 </table>
-            </section>
+            </div>
             <section id="experiencia" class="seccion">
                 <h2>WORK EXPERIENCE</h2>
                 <p>
                     Throughout my career, I’ve worked in different professional environments that have helped me develop key skills such as responsibility, teamwork, adaptability, and problem-solving. This experience has given me a strong foundation to take on new challenges and grow in any field I pursue.
                 </p>
             </section>
-            <section class="seccion">
+            <div class="seccion">
                 <table class="curriculum">
                     <tr>
                         <td class="tiempo"><p>2021 - 2025</p></td>
@@ -361,7 +363,7 @@
                         </td>
                     </tr>
                 </table>
-            </section>
+            </div>
             <section id="intereses" class="seccion">
                 <h2>INTERESTS</h2>
                 <p>
@@ -371,17 +373,17 @@
                     I’m always drawn to anything that lets me learn something new without feeling like I’m "studying," and I think those everyday curiosities are a big part of what keeps me growing, both as a person and as a developer.
                 </p>
             </section>
-            <section class="intereses seccion">
+            <div class="intereses seccion">
                 <img src="../../images/aficiones.webp" alt="painted figurine" loading="lazy">
-            </section>
-        </section>
-    </section>
+            </div>
+        </div>
+    </main>
     <section id="contacta-conmigo" class="contacto">
         <h2>CONTACT ME</h2>
         <h3>Let’s build something together</h3>
     </section>
-    <section class="contenedor-contacto">
-        <section class="input">
+    <div class="contenedor-contacto">
+        <div class="input">
             <label>Name</label>
             <input class="datos" type="text">
             <label>Email</label>
@@ -389,35 +391,35 @@
             <label>Message</label>
             <textarea class="mensaje"></textarea>
             <button class="enviar">Send</button>
-        </section>
-        <section class="informacion">
+        </div>
+        <div class="informacion">
             <section>
                 <img src="../../images/logo_KAA.webp" alt="KAA logo">
                 <h3>Kenneth Alonso Arce</h3>
             </section>
-            <p>kennethalonso@email.com</p>
+            <p>kennethalonsoarce@gmail.com</p>
             <p>+34 600 00 00 01</p>
             <a href="https://github.com/KennethAlAr" target="_blank"><img src="../../images/icons/github.webp" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/kennethalar" target="_blank"><img src="../../images/icons/linkedin_negro.webp" alt="linkedin icon"></a>
-        </section>
-    </section>
+        </div>
+    </div>
     <footer>
-        <section class="footer-izquierda">
+        <div class="footer-izquierda">
             <a href="../legal_notice/index.html">Legal Notice</a>
             <a href="../cookies/index.html">Cookies</a>
-        </section>
-        <section class="footer-derecha">
+        </div>
+        <div class="footer-derecha">
             <a href="https://github.com/KennethAlAr" target="_blank">Github</a>
             <a href="https://www.linkedin.com/in/kennethalar" target="_blank">LinkedIn</a>
-        </section>
+        </div>
     </footer>
     <a id="botonArriba" class="arriba" href="#sobre-mi"><img src="../../images/icons/flechas-arriba.webp" alt="up-arrow icon"></a>
-    <section id="cookies" class="cookies">
-        <section class="cookie-popup" id="cookiePopup">
+    <div id="cookies" class="cookies">
+        <div class="cookie-popup" id="cookiePopup">
             <p>This website uses only the cookies necessary for its basic functionality and does not store any personal or tracking data. <a href="../cookies/index.html">Learn more</a></p>
             <button id="aceptarCookies">Accept</button>
-        </section>
-    </section>
+        </div>
+    </div>
     <script src="../home/scripts/script.js"></script>
 </body>
 </html>
