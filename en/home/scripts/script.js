@@ -22,7 +22,7 @@ window.addEventListener('scroll', () => {
 });
 
 /*Modo Oscuro*/
-const seccionPrincipal = document.getElementById('zonaPrincipal');
+const seccionPrincipal = document.querySelector('.seccion-principal');
 const boton = document.getElementById('toogleTema');
 const imgGalgos = document.getElementById('imagenGalgos');
 const galgos = document.querySelector('.galgos');

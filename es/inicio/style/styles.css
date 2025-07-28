@@ -531,6 +531,7 @@ textarea{
     font-size: 15px;
     padding: 10px;
     text-align: justify;
+    resize: none;
 }
 
 .input{
@@ -1115,6 +1116,10 @@ footer{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+
+    .input{
+        padding-left: 100px;
     }
 
     .contenedor-contacto form, .contenedor-contacto div{
