@@ -210,7 +210,7 @@ aside{
     margin-right: 50px;
     margin-top: 50px;
     position: sticky;
-    top: 100px;
+    top: 130px;
 }
 
 aside nav{
@@ -523,8 +523,8 @@ footer{
     }
 
     .seccion-principal{
-        padding-right: 220px;
-        padding-left: 50px;
+        padding-right: 200px;
+        padding-left: 200px;
         width: calc(100% - 220px);
     }
 

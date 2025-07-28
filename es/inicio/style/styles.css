@@ -253,9 +253,8 @@ aside{
     display: none;
     z-index: 1;
     margin-right: 50px;
-    margin-top: 50px;
     position: sticky;
-    top: 100px;
+    top: 130px;
 }
 
 aside nav{
@@ -289,14 +288,20 @@ aside li{
 }
 
 .seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 60px;
+}
+
+.contenido{
     padding: 25px 20px;
     padding-bottom: 0;
     width: 100%;
     justify-items: center;
-    scroll-margin-top: 100px;
 }
 
-.seccion img{
+.contenido img{
     width: 100%;
     padding: 25px 0px;
 }
@@ -869,8 +874,12 @@ footer{
     }
 
     .seccion{
-        padding: 25px 50px;
+        justify-content: space-between;
         scroll-margin-top: 100px;
+    }
+
+    .contenido{
+        padding: 25px 50px;
         max-width: 500px;
     }
 
@@ -1044,7 +1053,7 @@ footer{
 
 }
 
-@media (min-width: 1300px){
+@media (min-width: 1500px){
 
     /*Menú navegación*/
 
@@ -1082,28 +1091,22 @@ footer{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding-right: 220px;
-        padding-left: 50px;
-        gap: 20px;
+        padding-right: 200px;
+        padding-left: 200px;
         width: calc(100% - 220px);
     }
 
     /*Orden alterno de las secciones*/
 
-    #principal > *:nth-child(1) { order: 1; }
-    #principal > *:nth-child(2) { order: 2; } 
-    #principal > *:nth-child(3) { order: 4; }
-    #principal > *:nth-child(4) { order: 3; } 
-    #principal > *:nth-child(5) { order: 5; }
-    #principal > *:nth-child(6) { order: 6; }
-    #principal > *:nth-child(7) { order: 8; }
-    #principal > *:nth-child(8) { order: 7; }
-    #principal > *:nth-child(9) { order: 9; }
-    #principal > *:nth-child(10) { order: 10; }
-    #principal > *:nth-child(11) { order: 12; }
-    #principal > *:nth-child(12) { order: 11; }
+    .seccion:nth-child(odd){
+        flex-direction: row;
+    }
 
-    .seccion{
+    .seccion:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    .contenido{
         max-width: none;
         width: calc(50% - 25px);
     }

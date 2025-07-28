@@ -1,6 +1,6 @@
 /*Menú anclado al llegar arriba*/
 const barraNavegacion = document.querySelector('.barra-navegacion');
-const seccionPrincipal = document.querySelector('.seccion-principal');
+const zonaPrincipal = document.getElementById('zonaPrincipal');
 let barraNavegacionOffsetTop = barraNavegacion.offsetTop;
 
 window.addEventListener('scroll', () => {
@@ -10,15 +10,19 @@ window.addEventListener('scroll', () => {
 
   if (window.scrollY >= barraNavegacionOffsetTop) {
     barraNavegacion.classList.add('fixed');
-    seccionPrincipal.style.paddingTop = '72px';
+    if (window.innerWidth < 600){
+      zonaPrincipal.style.paddingTop = '72px';
+    } else {
+      zonaPrincipal.style.paddingTop = '130px';
+    }    
   } else {
     barraNavegacion.classList.remove('fixed');
-    seccionPrincipal.style.paddingTop = '';
+    zonaPrincipal.style.paddingTop = '';
   }
 });
 
 /*Modo Oscuro*/
-const zonaPrincipal = document.getElementById('zonaPrincipal');
+const seccionPrincipal = document.getElementById('zonaPrincipal');
 const boton = document.getElementById('toogleTema');
 const imgGalgos = document.getElementById('imagenGalgos');
 const galgos = document.querySelector('.galgos');

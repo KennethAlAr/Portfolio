@@ -46,7 +46,7 @@
                 <a href="#inicio"><img class="logo" src="images/logo_KAA.webp" alt="Logo KAA"></a>
             </div>
             <div class="menu-derecha">
-                <a href="en/home/index.html#principal"><img src="images/icons/arabica.webp" alt="icono cambio idioma"></a>
+                <a href="en/home/index.html#sobre-mi"><img src="images/icons/arabica.webp" alt="icono cambio idioma"></a>
                 <button id="toogleTema" class="boton-toggle"><img src="images/icons/dia-y-noche.webp" alt="icono cambio modo claro-oscuro"></button>
             </div>                      
         </nav>
@@ -74,306 +74,318 @@
             </nav>
         </aside>
         <div id="principal" class="seccion-principal">
-            <section id="sobre-mi" class="seccion">
-                <h2>SOBRE MÍ</h2>
-                <p>
-                    Soy arquitecto de formación y con casi 10 años de experiencia trabajando en el sector industrial. Sin embargo, hace un tiempo decidí dar un giro a mi vida y dedicarme a lo que realmente me apasiona: la programación. Ahora estoy estudiando Desarrollo de Aplicaciones Multiplataforma (DAM) para prepararme a fondo y dar mis primeros pasos en el mundo del software.
-                    Nacido y criado en Barcelona, me considero una persona curiosa y constante, siempre con ganas de aprender y afrontar nuevos retos. También tengo dos galgos que me acompañan en esta nueva etapa, dándome la motivación y compañía que necesito para seguir adelante.
-                    Me encanta combinar la creatividad que desarrollé en arquitectura con la lógica y el orden que exige la programación, y creo que esa mezcla me aporta una visión diferente y valiosa para resolver problemas y crear soluciones prácticas. Estoy muy ilusionado con este cambio profesional y con todo lo que está por venir.
-                </p>
+            <section class="seccion" id="sobre-mi">
+                <article class="contenido">
+                    <h2>SOBRE MÍ</h2>
+                    <p>
+                        Soy arquitecto de formación y con casi 10 años de experiencia trabajando en el sector industrial. Sin embargo, hace un tiempo decidí dar un giro a mi vida y dedicarme a lo que realmente me apasiona: la programación. Ahora estoy estudiando Desarrollo de Aplicaciones Multiplataforma (DAM) para prepararme a fondo y dar mis primeros pasos en el mundo del software.
+                        Nacido y criado en Barcelona, me considero una persona curiosa y constante, siempre con ganas de aprender y afrontar nuevos retos. También tengo dos galgos que me acompañan en esta nueva etapa, dándome la motivación y compañía que necesito para seguir adelante.
+                        Me encanta combinar la creatividad que desarrollé en arquitectura con la lógica y el orden que exige la programación, y creo que esa mezcla me aporta una visión diferente y valiosa para resolver problemas y crear soluciones prácticas. Estoy muy ilusionado con este cambio profesional y con todo lo que está por venir.
+                    </p>
+                </article>
+                <div class="contenido">
+                    <img id="imagenGalgos" class="galgos" src="images/Galgos_negro.webp" alt="silueta de dos galgos" loading="lazy">
+                </div>
             </section>
-            <div class="seccion">
-                <img id="imagenGalgos" class="galgos" src="images/Galgos_negro.webp" alt="silueta de dos galgos" loading="lazy">
-            </div>
-            <section id="proyectos" class="seccion">
-                <h2>PROYECTOS</h2>
-                <p>
-                    En esta sección encontrarás una selección de mis proyectos más representativos, desarrollados durante mi formación y de manera autodidacta. Cada uno refleja mi evolución como desarrollador, así como mi enfoque en la escritura de código limpio, funcional y bien estructurado.
-                    He trabajado tanto en frontend como en backend, y cada proyecto está acompañado de una breve descripción, tecnologías utilizadas y, cuando es posible, un enlace para ver el resultado en acción.
-                </p>
-                <a class="boton-proyectos" href="es/proyectos/index.html"><h4>Ver todos los Proyectos</h4></a>        
+            <section class="seccion" id="proyectos">
+                <article class="contenido">
+                    <h2>PROYECTOS</h2>
+                    <p>
+                        En esta sección encontrarás una selección de mis proyectos más representativos, desarrollados durante mi formación y de manera autodidacta. Cada uno refleja mi evolución como desarrollador, así como mi enfoque en la escritura de código limpio, funcional y bien estructurado.
+                        He trabajado tanto en frontend como en backend, y cada proyecto está acompañado de una breve descripción, tecnologías utilizadas y, cuando es posible, un enlace para ver el resultado en acción.
+                    </p>
+                    <a class="boton-proyectos" href="es/proyectos/index.html"><h4>Ver todos los Proyectos</h4></a>        
+                </article>
+                <div class="contenido">
+                    <section class="slider">
+                        <input type="radio" name="boton-radio" id="tarjeta1" checked>
+                        <div class="slide">
+                            <div id="eduQuiz" class="tarjeta">
+                                <a href="https://github.com/KennethAlAr/E_continua_MPO" target="_blank"><img src="images/app.webp" alt="imagen de app1" loading="lazy"></a>
+                                <h3>EduQuiz</h3>
+                                <p>Aplicación de preguntas tipo test con selección de tema y dificultad desarrollado en Python.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta9" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta2" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <input type="radio" name="boton-radio" id="tarjeta2">
+                        <div class="slide">
+                            <div id="gameHubManager" class="tarjeta">
+                                <a href="https://github.com/KennethAlAr/E_continua_programacion_entornos_desarrollo" target="_blank"><img src="images/app2.webp" alt="imagen de app2" loading="lazy"></a>
+                                <h3>GameHub Manager</h3>
+                                <p>Aplicación para gestionar clientes, ventas e inventario de una tienda de juegos desarrollado en Java.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta1" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta3" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <input type="radio" name="boton-radio" id="tarjeta3">
+                        <div class="slide">
+                            <div id="superPirateWorld" class="tarjeta">
+                                <a href="https://github.com/KennethAlAr/Ejercicio-Super-Pirate-World" target="_blank"><img src="images/app3.webp" alt="imagen de app3" loading="lazy"></a>
+                                <h3>Super Pirate World</h3>
+                                <p>Juego de Plataformas inspirado en Mario, desarrollado en Python utilizando la biblioteca Pygame y siguiendo tutoriales.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta2" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta4" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <input type="radio" name="boton-radio" id="tarjeta4">
+                        <div class="slide">
+                            <div id="rollForInitiative" class="tarjeta">
+                                <a href="https://github.com/KennethAlAr/Entrega_final_Alonso" target="_blank"><img src="images/app4.webp" alt="imagen de app4" loading="lazy"></a>
+                                <h3>Roll for Initiative</h3>
+                                <p>Aplicación web desarrollada en Python con el framework Django para crear sistemas y salas para juegos de rol de mesa.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta3" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta5" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <input type="radio" name="boton-radio" id="tarjeta5">
+                        <div class="slide">
+                            <div id="timeTrackPro" class="tarjeta">
+                                <img src="images/app5.webp" alt="imagen de app5" loading="lazy">
+                                <h3>TimeTrack Pro</h3>
+                                <p>Cronómetro y gestor de tareas para mejorar la productividad personal desarrollado en Java.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta4" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta6" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <input type="radio" name="boton-radio" id="tarjeta6">
+                        <div class="slide">
+                            <div id="notasSeguras" class="tarjeta">
+                                <img src="images/app6.webp" alt="imagen de app6" loading="lazy">
+                                <h3>Notas Seguras</h3>
+                                <p>Aplicación de notas personales cifradas, con login y sincronización local desarrollado en Python.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta5" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta7" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <input type="radio" name="boton-radio" id="tarjeta7">
+                        <div class="slide">
+                            <div id="autoTest" class="tarjeta">
+                                <img src="images/app7.webp" alt="imagen de app7" loading="lazy">
+                                <h3>AutoTest</h3>
+                                <p>Simulador de test de conducir con estadísticas de progreso desarrollado en Java.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta6" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta8" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <input type="radio" name="boton-radio" id="tarjeta8">
+                        <div class="slide">
+                            <div id="ecoStore" class="tarjeta">
+                                <img src="images/app8.webp" alt="imagen de app8" loading="lazy">
+                                <h3>EcoStore</h3>
+                                <p>Simulador de tienda online con carrito, productos y pagos simulados desarrollado en Java.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta7" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta9" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <input type="radio" name="boton-radio" id="tarjeta9">
+                        <div class="slide">
+                            <div id="rescuePets" class="tarjeta">
+                                <img src="images/app9.webp" alt="imagen de app9" loading="lazy">
+                                <h3>RescuePets</h3>
+                                <p>Aplicación para adopción de animales con perfiles, filtros y formulario de contacto desarrollado en Python.</p>
+                            </div>
+                            <nav class="botones-laterales">
+                                <label for="tarjeta8" class="anterior"><span>&#x2039;</span></label>
+                                <label for="tarjeta1" class="siguiente"><span>&#x203a;</span></label>
+                            </nav>
+                        </div>
+                        <div class="botones-slider">
+                            <label for="tarjeta1" class="boton-slider" id="botonTarjeta1"></label>
+                            <label for="tarjeta2" class="boton-slider" id="botonTarjeta2"></label>
+                            <label for="tarjeta3" class="boton-slider" id="botonTarjeta3"></label>
+                            <label for="tarjeta4" class="boton-slider" id="botonTarjeta4"></label>
+                            <label for="tarjeta5" class="boton-slider" id="botonTarjeta5"></label>
+                            <label for="tarjeta6" class="boton-slider" id="botonTarjeta6"></label>
+                            <label for="tarjeta7" class="boton-slider" id="botonTarjeta7"></label>
+                            <label for="tarjeta8" class="boton-slider" id="botonTarjeta8"></label>
+                            <label for="tarjeta9" class="boton-slider" id="botonTarjeta9"></label>
+                        </div>
+                    </section>
+                </div>
             </section>
-            <div class="seccion">
-                <section class="slider">
-                    <input type="radio" name="boton-radio" id="tarjeta1" checked>
-                    <div class="slide">
-                        <div id="eduQuiz" class="tarjeta">
-                            <a href="https://github.com/KennethAlAr/E_continua_MPO" target="_blank"><img src="images/app.webp" alt="imagen de app1" loading="lazy"></a>
-                            <h3>EduQuiz</h3>
-                            <p>Aplicación de preguntas tipo test con selección de tema y dificultad desarrollado en Python.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta9" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta2" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <input type="radio" name="boton-radio" id="tarjeta2">
-                    <div class="slide">
-                        <div id="gameHubManager" class="tarjeta">
-                            <a href="https://github.com/KennethAlAr/E_continua_programacion_entornos_desarrollo" target="_blank"><img src="images/app2.webp" alt="imagen de app2" loading="lazy"></a>
-                            <h3>GameHub Manager</h3>
-                            <p>Aplicación para gestionar clientes, ventas e inventario de una tienda de juegos desarrollado en Java.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta1" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta3" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <input type="radio" name="boton-radio" id="tarjeta3">
-                    <div class="slide">
-                        <div id="superPirateWorld" class="tarjeta">
-                            <a href="https://github.com/KennethAlAr/Ejercicio-Super-Pirate-World" target="_blank"><img src="images/app3.webp" alt="imagen de app3" loading="lazy"></a>
-                            <h3>Super Pirate World</h3>
-                            <p>Juego de Plataformas inspirado en Mario, desarrollado en Python utilizando la biblioteca Pygame y siguiendo tutoriales.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta2" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta4" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <input type="radio" name="boton-radio" id="tarjeta4">
-                    <div class="slide">
-                        <div id="rollForInitiative" class="tarjeta">
-                            <a href="https://github.com/KennethAlAr/Entrega_final_Alonso" target="_blank"><img src="images/app4.webp" alt="imagen de app4" loading="lazy"></a>
-                            <h3>Roll for Initiative</h3>
-                            <p>Aplicación web desarrollada en Python con el framework Django para crear sistemas y salas para juegos de rol de mesa.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta3" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta5" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <input type="radio" name="boton-radio" id="tarjeta5">
-                    <div class="slide">
-                        <div id="timeTrackPro" class="tarjeta">
-                            <img src="images/app5.webp" alt="imagen de app5" loading="lazy">
-                            <h3>TimeTrack Pro</h3>
-                            <p>Cronómetro y gestor de tareas para mejorar la productividad personal desarrollado en Java.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta4" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta6" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <input type="radio" name="boton-radio" id="tarjeta6">
-                    <div class="slide">
-                        <div id="notasSeguras" class="tarjeta">
-                            <img src="images/app6.webp" alt="imagen de app6" loading="lazy">
-                            <h3>Notas Seguras</h3>
-                            <p>Aplicación de notas personales cifradas, con login y sincronización local desarrollado en Python.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta5" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta7" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <input type="radio" name="boton-radio" id="tarjeta7">
-                    <div class="slide">
-                        <div id="autoTest" class="tarjeta">
-                            <img src="images/app7.webp" alt="imagen de app7" loading="lazy">
-                            <h3>AutoTest</h3>
-                            <p>Simulador de test de conducir con estadísticas de progreso desarrollado en Java.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta6" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta8" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <input type="radio" name="boton-radio" id="tarjeta8">
-                    <div class="slide">
-                        <div id="ecoStore" class="tarjeta">
-                            <img src="images/app8.webp" alt="imagen de app8" loading="lazy">
-                            <h3>EcoStore</h3>
-                            <p>Simulador de tienda online con carrito, productos y pagos simulados desarrollado en Java.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta7" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta9" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <input type="radio" name="boton-radio" id="tarjeta9">
-                    <div class="slide">
-                        <div id="rescuePets" class="tarjeta">
-                            <img src="images/app9.webp" alt="imagen de app9" loading="lazy">
-                            <h3>RescuePets</h3>
-                            <p>Aplicación para adopción de animales con perfiles, filtros y formulario de contacto desarrollado en Python.</p>
-                        </div>
-                        <nav class="botones-laterales">
-                            <label for="tarjeta8" class="anterior"><span>&#x2039;</span></label>
-                            <label for="tarjeta1" class="siguiente"><span>&#x203a;</span></label>
-                        </nav>
-                    </div>
-                    <div class="botones-slider">
-                        <label for="tarjeta1" class="boton-slider" id="botonTarjeta1"></label>
-                        <label for="tarjeta2" class="boton-slider" id="botonTarjeta2"></label>
-                        <label for="tarjeta3" class="boton-slider" id="botonTarjeta3"></label>
-                        <label for="tarjeta4" class="boton-slider" id="botonTarjeta4"></label>
-                        <label for="tarjeta5" class="boton-slider" id="botonTarjeta5"></label>
-                        <label for="tarjeta6" class="boton-slider" id="botonTarjeta6"></label>
-                        <label for="tarjeta7" class="boton-slider" id="botonTarjeta7"></label>
-                        <label for="tarjeta8" class="boton-slider" id="botonTarjeta8"></label>
-                        <label for="tarjeta9" class="boton-slider" id="botonTarjeta9"></label>
-                    </div>
-                </section>
-            </div>
-            <section id="caja-herramientas" class="seccion">
-                <h2>CAJA DE HERRAMIENTAS</h2>
-                <p>
-                    En esta sección presento los lenguajes de programación, lenguajes de marca y bases de datos que utilizo habitualmente en mis proyectos. Son las tecnologías clave con las que desarrollo y diseño aplicaciones, desde la estructura y la lógica hasta el almacenamiento de datos. Conocer y dominar estas herramientas me permite crear soluciones funcionales, escalables y bien organizadas.
-                </p>
+            <section class="seccion" id="caja-herramientas">
+                <article class="contenido">
+                    <h2>CAJA DE HERRAMIENTAS</h2>
+                    <p>
+                        En esta sección presento los lenguajes de programación, lenguajes de marca y bases de datos que utilizo habitualmente en mis proyectos. Son las tecnologías clave con las que desarrollo y diseño aplicaciones, desde la estructura y la lógica hasta el almacenamiento de datos. Conocer y dominar estas herramientas me permite crear soluciones funcionales, escalables y bien organizadas.
+                    </p>
+                </article>
+                <div class="contenido">
+                    <table class="herramientas">
+                        <tr>
+                            <td><img class="icono" src="images/icons/java.webp" alt="icono de java"></td>
+                            <td><p>Java</p></td>
+                            <td><img class="icono" src="images/icons/html-5.webp" alt="icono de html-5"></td>
+                            <td><p>HTML5</p></td>
+                        </tr>
+                        <tr>
+                            <td><img class="icono" src="images/icons/python.webp" alt="icono de python"></td>
+                            <td><p>Python</p></td>
+                            <td><img class="icono" src="images/icons/css-3.webp" alt="icono de css-3"></td>
+                            <td><p>CSS3</p></td>
+                        </tr>
+                        <tr>
+                            <td><img class="icono" src="images/icons/mysql.webp" alt="icono de mySQL"></td>
+                            <td><p>MySQL</p></td>
+                            <td><img class="icono" src="images/icons/js.webp" alt="icono de javascript"></td>
+                            <td><p>JavaScript</p></td>
+                        </tr>
+                    </table>
+                </div>
             </section>
-            <div class="seccion">
-                <table class="herramientas">
-                    <tr>
-                        <td><img class="icono" src="images/icons/java.webp" alt="icono de java"></td>
-                        <td><p>Java</p></td>
-                        <td><img class="icono" src="images/icons/html-5.webp" alt="icono de html-5"></td>
-                        <td><p>HTML5</p></td>
-                    </tr>
-                    <tr>
-                        <td><img class="icono" src="images/icons/python.webp" alt="icono de python"></td>
-                        <td><p>Python</p></td>
-                        <td><img class="icono" src="images/icons/css-3.webp" alt="icono de css-3"></td>
-                        <td><p>CSS3</p></td>
-                    </tr>
-                    <tr>
-                        <td><img class="icono" src="images/icons/mysql.webp" alt="icono de mySQL"></td>
-                        <td><p>MySQL</p></td>
-                        <td><img class="icono" src="images/icons/js.webp" alt="icono de javascript"></td>
-                        <td><p>JavaScript</p></td>
-                    </tr>
-                </table>
-            </div>
-            <section id="formacion" class="seccion">
-                <h2>FORMACIÓN</h2>
-                <p>
-                    A lo largo de mi trayectoria, he apostado por una formación continua que me ha permitido adquirir conocimientos sólidos y actualizados en diversas áreas. Desde mis estudios iniciales en arquitectura hasta mi actual especialización en Desarrollo de Aplicaciones Multiplataforma, siempre he buscado combinar teoría y práctica para crecer profesionalmente. Esta base formativa me proporciona una visión amplia y me prepara para adaptarme a los cambios y demandas del sector tecnológico.
-                </p>
+            <section class="seccion" id="formacion">
+                <article class="contenido">
+                    <h2>FORMACIÓN</h2>
+                    <p>
+                        A lo largo de mi trayectoria, he apostado por una formación continua que me ha permitido adquirir conocimientos sólidos y actualizados en diversas áreas. Desde mis estudios iniciales en arquitectura hasta mi actual especialización en Desarrollo de Aplicaciones Multiplataforma, siempre he buscado combinar teoría y práctica para crecer profesionalmente. Esta base formativa me proporciona una visión amplia y me prepara para adaptarme a los cambios y demandas del sector tecnológico.
+                    </p>
+                </article>
+                <div class="contenido">
+                    <table class="curriculum">
+                        <tr>
+                            <td class="tiempo"><p>2025 Cursando</p></td>
+                            <td>
+                                <p>
+                                    Técnico Superior en Desarrollo de Aplicaciones Multiplataforma
+                                </p>
+                                <p class="centro">
+                                    Academia The Power
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tiempo"><p>2024</p></td>
+                            <td>
+                                <p>
+                                    Certificado de formación en Python
+                                </p>
+                                <p class="centro">
+                                    Academia CoderHouse
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tiempo"><p>2023</p></td>
+                            <td>
+                                <p>
+                                    Certificado de formación en Data Analytics
+                                </p>
+                                <p class="centro">
+                                    Academia CoderHouse
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tiempo"><p>2011 - 2016</p></td>
+                            <td>
+                                <p>
+                                    Grado en Arquitectura
+                                </p>
+                                <p class="centro">
+                                    Escuela Técnica Superior de Arquitectura de Barcelona (ETSAB-UPC)
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tiempo"><p>2009 - 2011</p></td>
+                            <td>
+                                <p>
+                                    Técnico Superior en Desarrollos Urbanísticos y Operaciones Topográficas
+                                </p>
+                                <p class="centro">
+                                    IES Escola del Treball
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
-            <div class="seccion">
-                <table class="curriculum">
-                    <tr>
-                        <td class="tiempo"><p>2025 Cursando</p></td>
-                        <td>
-                            <p>
-                                Técnico Superior en Desarrollo de Aplicaciones Multiplataforma
-                            </p>
-                            <p class="centro">
-                                Academia The Power
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tiempo"><p>2024</p></td>
-                        <td>
-                            <p>
-                                Certificado de formación en Python
-                            </p>
-                            <p class="centro">
-                                Academia CoderHouse
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tiempo"><p>2023</p></td>
-                        <td>
-                            <p>
-                                Certificado de formación en Data Analytics
-                            </p>
-                            <p class="centro">
-                                Academia CoderHouse
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tiempo"><p>2011 - 2016</p></td>
-                        <td>
-                            <p>
-                                Grado en Arquitectura
-                            </p>
-                            <p class="centro">
-                                Escuela Técnica Superior de Arquitectura de Barcelona (ETSAB-UPC)
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tiempo"><p>2009 - 2011</p></td>
-                        <td>
-                            <p>
-                                Técnico Superior en Desarrollos Urbanísticos y Operaciones Topográficas
-                            </p>
-                            <p class="centro">
-                                IES Escola del Treball
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <section id="experiencia" class="seccion">
-                <h2>EXPERIENCIA</h2>
-                <p>
-                    A lo largo de mi carrera he trabajado en distintos entornos profesionales que me han permitido desarrollar habilidades clave como la responsabilidad, el trabajo en equipo, la adaptabilidad y la resolución de problemas. Esta trayectoria me ha dado una base sólida para enfrentar nuevos desafíos y crecer en cualquier ámbito en el que me involucre.
-                </p>
+            <section class="seccion" id="experiencia">
+                <article class="contenido">
+                    <h2>EXPERIENCIA</h2>
+                    <p>
+                        A lo largo de mi carrera he trabajado en distintos entornos profesionales que me han permitido desarrollar habilidades clave como la responsabilidad, el trabajo en equipo, la adaptabilidad y la resolución de problemas. Esta trayectoria me ha dado una base sólida para enfrentar nuevos desafíos y crecer en cualquier ámbito en el que me involucre.
+                    </p>
+                </article>
+                <div class="contenido">
+                    <table class="curriculum">
+                        <tr>
+                            <td class="tiempo"><p>2021 - 2025</p></td>
+                            <td>
+                                <p>
+                                    INGAL Ingeniería
+                                </p>
+                                <p class="centro">
+                                    Cargo: Técnico de Obra
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tiempo"><p>2017 - 2021</p></td>
+                            <td>
+                                <p>
+                                    INGAL Ingeniería - SENCO Construcción
+                                </p>
+                                <p class="centro">
+                                    Cargo: Delineante
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tiempo"><p>2014 - 2020</p></td>
+                            <td>
+                                <p>
+                                    Muebles de Tena
+                                </p>
+                                <p class="centro">
+                                    Cargo: Encargado de local comercial
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tiempo"><p>2010 - 2012</p></td>
+                            <td>
+                                <p>
+                                    IBINSER Gerencia de Proyectos
+                                </p>
+                                <p class="centro">
+                                    Cargo: Delineante
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </section>
-            <div class="seccion">
-                <table class="curriculum">
-                    <tr>
-                        <td class="tiempo"><p>2021 - 2025</p></td>
-                        <td>
-                            <p>
-                                INGAL Ingeniería
-                            </p>
-                            <p class="centro">
-                                Cargo: Técnico de Obra
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tiempo"><p>2017 - 2021</p></td>
-                        <td>
-                            <p>
-                                INGAL Ingeniería - SENCO Construcción
-                            </p>
-                            <p class="centro">
-                                Cargo: Delineante
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tiempo"><p>2014 - 2020</p></td>
-                        <td>
-                            <p>
-                                Muebles de Tena
-                            </p>
-                            <p class="centro">
-                                Cargo: Encargado de local comercial
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tiempo"><p>2010 - 2012</p></td>
-                        <td>
-                            <p>
-                                IBINSER Gerencia de Proyectos
-                            </p>
-                            <p class="centro">
-                                Cargo: Delineante
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <section id="intereses" class="seccion">
-                <h2>INTERESES</h2>
-                <p>
-                    Cuando no estoy programando (o peleándome con algún bug), me gusta rodearme de cosas que me inspiran, me relajan o simplemente me divierten. Escucho muchos podcasts, en especial de historia, ciencia o curiosidades, ya sea mientras paseo con mis dos galgos o cuando estoy concentrado pintando miniaturas de Warhammer, una afición que mezcla creatividad, estrategia y mucha paciencia con pinceles diminutos.
-                    También soy muy de videojuegos, sobre todo si es en buena compañía. Me encanta jugar online con mis colegas, echarnos unas risas y desconectar un rato del mundo. A veces somos competitivos, otras simplemente desastre, pero siempre lo pasamos bien. Además, me gusta leer (tanto novela como ensayo), descubrir nuevas bandas sonoras épicas, y perderme en YouTube con vídeos random de historia, tecnología o canales frikis.
-                    Me interesa todo lo que me permita aprender algo nuevo sin que parezca que estoy estudiando, y creo que esas pequeñas curiosidades del día a día son las que también me empujan a seguir creciendo como persona y como desarrollador.
-                </p>
+            <section class="seccion" id="intereses">
+                <article class="contenido">
+                    <h2>INTERESES</h2>
+                    <p>
+                        Cuando no estoy programando (o peleándome con algún bug), me gusta rodearme de cosas que me inspiran, me relajan o simplemente me divierten. Escucho muchos podcasts, en especial de historia, ciencia o curiosidades, ya sea mientras paseo con mis dos galgos o cuando estoy concentrado pintando miniaturas de Warhammer, una afición que mezcla creatividad, estrategia y mucha paciencia con pinceles diminutos.
+                        También soy muy de videojuegos, sobre todo si es en buena compañía. Me encanta jugar online con mis colegas, echarnos unas risas y desconectar un rato del mundo. A veces somos competitivos, otras simplemente desastre, pero siempre lo pasamos bien. Además, me gusta leer (tanto novela como ensayo), descubrir nuevas bandas sonoras épicas, y perderme en YouTube con vídeos random de historia, tecnología o canales frikis.
+                        Me interesa todo lo que me permita aprender algo nuevo sin que parezca que estoy estudiando, y creo que esas pequeñas curiosidades del día a día son las que también me empujan a seguir creciendo como persona y como desarrollador.
+                    </p>
+                </article>
+                <div class="intereses contenido">
+                    <img src="images/aficiones.webp" alt="Figura pintada" loading="lazy">
+                </div>
             </section>
-            <div class="intereses seccion">
-                <img src="images/aficiones.webp" alt="Figura pintada" loading="lazy">
-            </div>
         </div>
     </main>
     <section id="contacta-conmigo" class="contacto">
